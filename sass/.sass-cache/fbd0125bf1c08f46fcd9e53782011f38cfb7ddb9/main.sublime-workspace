@@ -1,0 +1,707 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"section",
+				"section"
+			],
+			[
+				"sections",
+				"sectionsInView"
+			],
+			[
+				"backgr",
+				"background-position"
+			],
+			[
+				"padding",
+				"padding-right"
+			],
+			[
+				"placehol",
+				"placeholder4"
+			],
+			[
+				"main",
+				"mainHeight"
+			],
+			[
+				"anim",
+				"animInView"
+			],
+			[
+				"fade",
+				"fadeIn"
+			],
+			[
+				"time",
+				"delayTime"
+			],
+			[
+				"delay",
+				"delayTime"
+			],
+			[
+				"fadeOut",
+				"fadeOutMain"
+			],
+			[
+				"fadeINO",
+				"slideFadeInOptions"
+			],
+			[
+				"dire",
+				"direct-nav-buttons"
+			],
+			[
+				"directNav",
+				"directNavButtons"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"trans",
+				"translate()"
+			],
+			[
+				"translate",
+				"translateY()"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"margin-",
+				"margin-top"
+			],
+			[
+				"list-st",
+				"list-style-type"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"work",
+				"work-section-content"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"col-",
+				"col-md-offset-2"
+			],
+			[
+				"block",
+				"inline-block"
+			],
+			[
+				"inline",
+				"inline"
+			],
+			[
+				"col",
+				"col-md-8"
+			],
+			[
+				"to",
+				"to-top"
+			],
+			[
+				"next",
+				"nextSectionNum"
+			],
+			[
+				"on",
+				"onMouseWheel"
+			],
+			[
+				"hide",
+				"hideMainSections"
+			],
+			[
+				"sec",
+				"section"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"setTra",
+				"setTranslateYOperator"
+			],
+			[
+				"tras",
+				"transform"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"transla",
+				"translateY()"
+			],
+			[
+				"direct",
+				"directNavButtonSize"
+			],
+			[
+				"current",
+				"currentSlide"
+			],
+			[
+				"dnav",
+				"dnav-btn-inactive"
+			],
+			[
+				"bg",
+				"background-color"
+			],
+			[
+				"this",
+				"thisBGCol"
+			],
+			[
+				"a",
+				"absolute"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"slide",
+				"slideWidth"
+			],
+			[
+				"transl",
+				"translateX"
+			],
+			[
+				"curren",
+				"currentTranlateXval"
+			],
+			[
+				"pa",
+				"pagePosition"
+			],
+			[
+				"autoS",
+				"autoSlideInterval"
+			],
+			[
+				"aut",
+				"autoSlideOnLoad"
+			],
+			[
+				"d",
+				"deltaY"
+			],
+			[
+				"do",
+				"downArrow"
+			],
+			[
+				"rgb",
+				"rgba()"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"hea",
+				"headerSlideAnimOptions"
+			],
+			[
+				"header",
+				"headerSlideAnimProperties"
+			],
+			[
+				"se",
+				"section"
+			],
+			[
+				"f",
+				"false"
+			],
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"create",
+				"createDirectNav"
+			],
+			[
+				"set",
+				"setMarginLeft"
+			],
+			[
+				"curr",
+				"currentSlide"
+			],
+			[
+				"mL",
+				"mLeftOperator"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 104.0,
+		"last_filter": "Install ",
+		"selected_items":
+		[
+			[
+				"Install ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 432.0
+	},
+	"console":
+	{
+		"height": 304.0,
+		"history":
+		[
+			"\"sass\", \"--update\", \"main.scss\":\"C:\\Users\\user\\Google Drive\\Projects\\Portfolio Site\\Site\\vDev\\sass\\\" \"/../css/main.css\"",
+			"sass --update \"main.scss\":\"C:\\Users\\user\\Google Drive\\Projects\\Portfolio Site\\Site\\vDev\\sass\\\" \"/../css/main.css\"",
+			"sass --update main.scss:\"C:\\Users\\user\\Google Drive\\Projects\\Portfolio Site\\Site\\vDev\\sass\\\" \"/../css/main.css\"",
+			"sass main.scss ../css/main.css",
+			"sass --update main.scss:\"C:\\Users\\user\\Google Drive\\Projects\\Portfolio Site\\Site\\vDev\\sass\\\" \"/../css/main.css\"",
+			"sass --update \"C:\\Users\\user\\Google Drive\\Projects\\Portfolio Site\\Site\\vDev\\sass\\main.scss\":\"C:\\Users\\user\\Google Drive\\Projects\\Portfolio Site\\Site\\vDev\\css\\main.css\"",
+			"sass --update",
+			"sass --update ",
+			"sass --update main.scss:\"C:\\Users\\user\\Google Drive\\Projects\\Portfolio Site\\Site\\vDev\\css/main.css\"",
+			"sass --update \"main.scss\":\"C:\\Users\\user\\Google Drive\\Projects\\Portfolio Site\\Site\\vDev\\css/main.css\"",
+			"sass --update \"C:\\Users\\user\\Google Drive\\Projects\\Portfolio Site\\Site\\vDev\\sass\\main.scss\":\"C:\\Users\\user\\Google Drive\\Projects\\Portfolio Site\\Site\\vDev\\css/main.css\" --stop-on-error --no-cache",
+			"sass --update \"C:\\Users\\user\\Google Drive\\Projects\\Portfolio Site\\Site\\vDev\\sass\\main.scss\" \"C:\\Users\\user\\Google Drive\\Projects\\Portfolio Site\\Site\\vDev\\css/main.css\" --stop-on-error --no-cache",
+			"sass --update \"C:\\Users\\user\\Google Drive\\Projects\\Portfolio Site\\Site\\vDev\\css\\main.scss\" \"C:\\Users\\user\\Google Drive\\Projects\\Portfolio Site\\Site\\vDev\\sass/main.css\" --stop-on-error --no-cache",
+			"sass --update \"C:\\Users\\user\\Google Drive\\Projects\\Portfolio Site\\Site\\vDev\\sass\\main.scss\":\"C:\\Users\\user\\Google Drive\\Projects\\Portfolio Site\\Site\\vDev\\sass/main.css\" --stop-on-error --no-cache",
+			"sass --update C:\\Users\\user\\Google Drive\\Projects\\Portfolio Site\\Site\\vDev\\sass\\main.scss:C:\\Users\\user\\Google Drive\\Projects\\Portfolio Site\\Site\\vDev\\css/main.css --stop-on-error --no-cache"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/user/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.cache/01524fae79697630d0454ba3fabd9414",
+		"/C/Users/user/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/user/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/vDev/css/main.css",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/vDev/sass/main.scss",
+		"/C/Users/user/AppData/Roaming/Sublime Text 3/Packages/SublimeOnSaveBuild/README.md",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/vDev/sass/main.css.map",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.5/3.5.0/sass/main.css.map",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.5/3.5.0/sass/main.scss",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.5/3.5.0/sass/main.css",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.5/3.5.0/css/style.css",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.5/3.5.0/css/main.scss",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.5/3.5.0/css/animations.css",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.5/3.5.0/js/main.js",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.5/3.5.0/about.html",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.5/3.5.0/projects.html",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.5/3.5.0/work.html",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.5/3.5.0/index.html",
+		"/C/Users/user/Google Drive/Projects/Crap/parallax.css",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.4/3.4.3/css/animations.css",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.4/3.4.3/projects.html",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.4/3.4.3/css/style.css",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.4/3.4.3/index.html",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.4/3.4.3/js/main.js",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.4/3.4.2/js/main.js",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.4/3.4.2/css/style.css",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.4/3.4.2/about.html",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.4/3.4.2/projects.html",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.4/3.4.2/work.html",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.4/3.4.2/index.html",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.4/3.4.1/projects.html",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.4/3.4.1/index.html",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.4/3.4.1/js/main.js",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.4/3.4.1/css/style.css",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.4/3.4.1/about.html",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.4/3.4.1/work.html",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.4/3.4.1/js/jquery.inViewport-master/jquery.inViewport.js",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.4/3.4.1/slider/css/slider.css",
+		"/C/Users/user/Google Drive/Projects/Slide On Scroll/v1/1.1/js/main.js",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.4/3.4.1/slider/js/slider.js",
+		"/C/Users/user/Google Drive/Projects/Slider/v2/2.9/css/slider.css",
+		"/C/Users/user/Google Drive/Projects/Slider/v2/2.9/js/slider.js",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.4/3.4.0/index.html",
+		"/C/Users/user/Google Drive/Projects/Slider/v2/2.9/index.html",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.4/3.4.0/css/style.css",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.4/3.4.0/about.html",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.4/3.4.0/projects.html",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.4/3.4.0/work.html",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.4/3.4.0/js/main.js",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.4/js/main.js",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.4/css/style.css",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.3/3.3.2/index.html",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.4/index.html",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.4/about.html",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.3.2/js/main.js",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.3.2/css/animations.css",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.3.2/css/style.css",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.3.2 - Copy/changelog.txt",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.3.2/index.html",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.3.1/slider/js/slider.js",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.3.1/js/main.js",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.3.1/css/style.css",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.3.1/index.html",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.3/index.html",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.3/css/style.css",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.3/slider/css/slider.css",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.3/slider/js/slider.js",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.2/slider/css/slider.css",
+		"/C/Users/user/Google Drive/Projects/Slide On Scroll/v1/1.1/index.html",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.2/js/main.js",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.2/index.html",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.2/slider/js/slider.js",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.2/css/style.css",
+		"/C/Users/user/Google Drive/Projects/Slider/v2/2.8/index.html",
+		"/C/Users/user/Google Drive/Projects/Slider/index.html",
+		"/C/Users/user/Google Drive/Projects/Slider/v2/2.8/js/slider.js",
+		"/C/Users/user/Google Drive/Projects/Todo/js/main.js",
+		"/C/Users/user/Google Drive/Projects/Todo/css/style.css",
+		"/C/Users/user/Google Drive/Projects/Todo/index.html",
+		"/C/Users/user/Google Drive/Projects/Slider/v2/2.8/css/slider.css",
+		"/C/Users/user/Google Drive/Projects/Slider/v2/2.9/css/animations.css",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v1/1.5/css/style.css",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.1/slider/js/slider.js",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.1/js/main.js",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.1/css/style.css",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.1/index.html",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v1/1.5/index.html",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v2/2.2/index.html",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.0/js/main.js",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.0/css/style.css",
+		"/C/Users/user/Google Drive/Projects/Portfolio Site/Site/v3/3.0/index.html",
+		"/C/Users/user/Google Drive/Projects/Slide On Scroll/v1/1.1/changelog.txt",
+		"/C/Users/user/Google Drive/Projects/Slide On Scroll/v1/1.1/css/style.css",
+		"/C/Users/user/Google Drive/Projects/Slide On Scroll/v1/1.0/js/main.js",
+		"/C/Users/user/Google Drive/Projects/Slide On Scroll/v1/1.0/css/style.css",
+		"/C/Users/user/Google Drive/Projects/Slide On Scroll/v1/1.0/index.html",
+		"/C/Users/user/Google Drive/Projects/Slide On Scroll/js/jquery-mousewheel-master/README.md",
+		"/C/Users/user/Google Drive/Projects/Slide On Scroll/css/style.css",
+		"/C/Users/user/Google Drive/Projects/Slide On Scroll/index.html",
+		"/C/Users/user/Google Drive/Projects/Slide On Scroll/js/main.js",
+		"/C/Users/user/Google Drive/Projects/Slider/v2/2.7/readme.txt",
+		"/C/Users/user/Google Drive/Projects/Slider/v2/2.7/css/slider.css",
+		"/C/Users/user/Google Drive/Projects/Slider/v2/2.7/js/slider.js",
+		"/C/Users/user/Google Drive/Projects/Slider/v2/2.7/index.html",
+		"/C/Users/user/Google Drive/Projects/Slider/v2/2.6/js/slider.js",
+		"/C/Users/user/Google Drive/Projects/Slider/v2/2.6/css/slider.css",
+		"/C/Users/user/Google Drive/Projects/Slider/v2/2.6/index.html"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 105.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"SASS",
+			"\"cmd\": [\"sass\", \"--update\", \"$file:${file_path}/${file_base_name}.css\", \"--stop-on-error\", \"--no-cache\"],",
+			"...round-position:",
+			"gb(230,230,230)",
+			"img",
+			"fadeInShortDelay",
+			"]",
+			"fadein",
+			"fadeIn",
+			"sectionSlideInAnimProperties",
+			"sectionSlideInAnimOptions",
+			"sectionFadeInOptions",
+			"fadeOutAll",
+			"fadeInAll",
+			"anim",
+			"$animInView",
+			"};\n",
+			"\t\t\t\tconsole.log($animInView);",
+			"background",
+			" center center",
+			"background-size",
+			".project",
+			"/placeholder",
+			"projects-content-1",
+			"-on-load",
+			" anim-on-load",
+			"top",
+			" anim",
+			"AnimPro",
+			".sections",
+			";\n",
+			"anim",
+			"<a>",
+			"z-inde",
+			"arrows",
+			"arrow",
+			"autoSlide",
+			"id=\"footer\"",
+			".col-md-3",
+			".row",
+			"section-header",
+			"paragraph-container",
+			"section-footer",
+			"section-header",
+			"section-content",
+			"content",
+			"h3",
+			"footer",
+			"font-family",
+			"grayscale",
+			".section",
+			"min-heigh",
+			"logo",
+			"sub",
+			"sub-section",
+			"static",
+			".section>",
+			"sub-section",
+			"section>div",
+			"h1",
+			".section",
+			"overflow",
+			".section",
+			"section-header",
+			"animation",
+			".section",
+			"to-top",
+			"controller",
+			"current",
+			"currentSection",
+			"};\n",
+			"running = false",
+			"running= false",
+			".section",
+			"running = false",
+			"currentSection",
+			"currentSectionNum",
+			"sectionHeight",
+			"\"x\"",
+			"text-container",
+			"text-cont",
+			"#main",
+			"#main .con",
+			".container",
+			"dnav",
+			"z-in",
+			"\tz-index: 0;",
+			"z-index",
+			"ease",
+			"directNavButton",
+			"currentSlide++",
+			".css",
+			"currentSection",
+			"CurrentSection",
+			"current",
+			"curent",
+			"z-in",
+			"background",
+			"console.log",
+			"//console.log",
+			"grayscale.svg",
+			"grayscale",
+			"grayscale.svg",
+			"slide",
+			"fadeIn",
+			"attr",
+			"auto",
+			"var ",
+			"var",
+			"onClick",
+			"startSlider",
+			"$slideList",
+			"inc",
+			"onClick",
+			"console.log",
+			"../images/",
+			"poster",
+			"images",
+			"images/",
+			"images",
+			"console.log",
+			".container",
+			".content",
+			"offset",
+			"col-md-4",
+			"img-col",
+			".nav",
+			"languages"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"fadeInNoDelay",
+			"$animSections",
+			"",
+			"background-image",
+			"",
+			"/placeholders/placeholder",
+			"",
+			" anim anim-on-load",
+			" anim-on-load",
+			"header",
+			"footer",
+			"header",
+			"content",
+			"wheelController",
+			"next",
+			"currentSectionNum",
+			"//console.log",
+			"console.log",
+			"",
+			"startSlider",
+			"//consol.log",
+			"../../../Shared Resources/images/",
+			"../../Shared Resources/images/",
+			"//console.log",
+			"#footer",
+			"currentSection",
+			"header1SlideAnimOptions",
+			"slideAnimProperties",
+			"slideAnimOptions"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 35.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "main.sublime-project",
+	"replace":
+	{
+		"height": 66.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 357.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

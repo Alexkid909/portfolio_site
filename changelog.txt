@@ -1,0 +1,8 @@
+Changes in this version
+
+1. Initial fade in
+		- Index begins with all main sections undisplayed
+		- First main section fades in after short delay
+2. Fade in on traversal
+		- Currently displayed section fades out on navigating away via mousewheel or main nav.
+		- New section fades in.

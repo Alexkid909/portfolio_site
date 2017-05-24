@@ -1,0 +1,734 @@
+/*GLOBAL*/
+
+body {
+	font-family: 'Rajdhani';
+		color: #fff;
+		max-width: 1920px;
+		font-size: 10px;
+		text-align: center;
+		background-color: rgb(20,20,20)
+}
+
+h1, h2, p {
+	margin: 0;
+}
+
+h1, h2 {
+	font-weight:300;
+
+}
+
+h1 {
+	font-size: 8em;
+}
+
+h2 {
+	font-size: 7em;
+}
+
+h3 {
+	font-size: 6em;
+}
+
+p {
+	font-size: 2.5em;
+	font-weight: 500;
+}
+
+.section {
+	position: relative;
+	background-color: rgba(0,0,0,0);
+	opacity: 0;
+/*	display: none;*/
+	/*	width: 100%;*/
+	/*overflow: hidden;*/
+
+}
+
+.row {
+	margin-right:0;
+	margin-left: 0;
+}
+
+.section.header {
+	height: 33.4vh;
+	background-color: rgb(57, 63, 150);
+	/*margin-top: 0;*/
+	/*overflow: hidden;*/
+
+}
+
+.section.header h2 {
+	position: relative;
+	top: 60%;
+	transform: translateY(-60%);
+}
+
+.section.content {
+	background-color: rgb(230,230,230);
+	min-height: 50vh;
+	display: table;
+	width: 100%;
+	color: #000;
+}
+
+.section.content.projects {
+	background-color: rgba(0,0,0,0);
+}
+
+.section.content .container {
+
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	padding-left: 0;
+	padding-right: 0;
+	/*transform: translateY(-50%);*/
+}
+
+.section.content p {
+	margin-top:50px;
+	font-size: 2.5em;
+}
+
+.section.content p:last-child {
+	margin-bottom:50px;
+}
+
+.section.footer {
+	min-height: 17vh;
+	color: #fff;
+	padding-top: 40px;
+	padding-bottom: 40px; 
+}
+
+
+.section.footer p {
+	margin-top: 10px;
+	font-size: 2.25vh;
+}
+
+.section.footer a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.section.footer .row {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.section .project {
+	height: 50vh;
+}
+
+.paragraph-container {
+		width: 500px;
+		margin-left: 100px;
+		margin-right: 100px;
+}
+
+.section .row {
+	margin-top: 0;
+}
+
+.text-container {
+	margin: 0 20px 0 20px;
+}
+
+/*Horizontal Nav*/
+
+#nav-section {
+    position: fixed;
+	width:100%;
+	text-align: center;
+	background-color: rgba(0,0,0,0);
+	z-index: 2;
+	animation: dropIn 3s ease-in 1.5s 1 both;
+	position: fixed;
+	top: 0;
+}
+
+#nav-section #to-top {
+	position: absolute;
+	left: 15px;
+	text-align: left;
+} 		
+
+#nav-section .nav li {
+	display: inline-block;
+	min-width: 10%;
+	text-align: center;
+}
+
+#nav-section a {
+	color:white;
+	font-weight: 900;
+	display: inline-block;
+	width:100%;
+	padding-left:20px;
+	padding-right:20px;
+	font-size: 3em;
+	text-decoration: none;
+}
+
+#nav-section a:hover, #nav-section a:focus {
+   	color: #000;	
+	text-shadow:
+	0px 0px 30px #fff,
+	0px 0px 30px #fff,
+	0px 0px 30px #fff,
+	0px 0px 30px #fff,
+	0px 0px 30px #fff,
+	0px 0px 30px #fff,
+	0px 0px 30px #fff,
+	0px 0px 30px #fff,
+	0px 0px 30px #fff,
+	0px 0px 30px #fff,
+	0px 0px 30px #fff;
+	background-color: transparent;
+	-webkit-transition: all .5s ease-in;
+	-moz-transition: all .5s ease-in;
+	-ms-transition: all .5s ease-in;
+	-o-transition: all .5s ease-in;
+	transition: all .5s ease-in;
+}
+
+#main-nav {
+	width: auto;
+}
+
+.section.footer a {
+		margin:0px 10px 20px 10px;
+}
+
+
+/*Header Section*/
+
+	/*Video Background*/
+
+
+	#video-container {
+		width: 100%;
+		height: 100%;
+		display: inline-block;
+		background:transparent url("../images/river-tyne2-poster.jpg") no-repeat 0 0; 
+   		-webkit-background-size:cover; 
+   		-moz-background-size:cover; 
+   		-o-background-size:cover; 
+   		background-size:cover; 
+		margin: 0 auto;
+		-webkit-filter: grayscale;
+		-moz-filter: grayscale;
+		-o-filter: grayscale; 
+		filter: grayscale; 
+		-webkit-filter: brightness(40%);
+		-moz-filter: brightness(40%);
+		-ms-filter: brightness(40%);
+		-o-filter: brightness(40%); 
+		filter: brightness(40%);
+		overflow: hidden;
+
+	}
+
+	#video-container video {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		-webkit-object-fit: cover;
+		-moz-object-fit: cover;
+		-ms-object-fit: cover;
+		-o-object-fit: cover;
+		object-fit: cover;
+		z-index: -1;
+
+
+	}
+
+	#video-container video source {
+		width: 100vw;
+	}
+
+	/*Header - Header Section*/
+	
+	#splash-header {
+		text-align: center;
+		position: relative;
+		height: 100vh;
+		animation: fadeInNoDelay 2s ease-in 0s 1 both;
+
+	}
+
+
+	#splash-header #header-section-container {
+		position: absolute;
+		top: 50%;
+	    text-align: center;
+	    color: #fff;
+	    left: 0;
+	    right: 0;
+	    margin: 0 auto;
+	    transform:translateY(-50%);
+	}
+
+	#splash-header h1 {
+		text-transform: lowercase;
+		text-align: center;
+		-webkit-animation: fadeInNoDelay;
+		-moz-animation: fadeInNoDelay;
+		-ms-animation: fadeInNoDelay;
+		-o-animation: fadeInNoDelay;
+		animation: fadeInNoDelay 2s ease-in 2s 1 both;
+	}
+
+	#splash-header .paragraph-container {
+		margin-top: 3vh;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#splash-header p:first-child {
+		-webkit-animation: fadeInNoDelay;
+		-moz-animation: fadeInNoDelay;
+		-ms-animation: fadeInNoDelay;
+		-o-animation: fadeInNoDelay;
+		animation:fadeInNoDelay 2s ease-in 3s 1 both;
+		}
+
+
+
+/*Main*/
+
+
+
+.main {
+	overflow:hidden;
+}
+
+#splash-header {
+	opacity: 0;
+	height: 100vh;
+
+}
+
+#splash h1 {
+	top: auto;
+	transform: none;
+
+}
+
+
+/*Work Page*/
+
+
+	img.dev_logo {
+		height: 6vh;	
+		margin-left:10px;
+		margin-right:10px;
+	}
+
+	img.sm-logo {
+		height: 6vh;	
+		/*margin-left:10px;
+		margin-right:10px;*/
+
+	}
+
+	#dev-logo-banner {
+		display: table-cell;
+		vertical-align: middle;
+		left: 0;
+		list-style-type: none;
+		padding-left: 0;
+		position: absolute;
+		top: 10%;
+		bottom:0;
+
+	}
+
+	#dev-logo-banner li {
+		margin-bottom: 30px;
+	}
+
+	#dev-logo-banner li:last-child {
+		margin-bottom:0;
+	}
+
+
+/*Projects Page*/
+
+	#projects #projects-content-1 {
+		min-height: 17vh;
+		/background-color: rgb(230,230,230);*/
+		/*display: none;*/
+	}
+
+		#projects #placeholder1 {
+		background: url("../images/slider.png");
+	}
+
+	#projects #placeholder2 {
+		background-image: url("../images/placeholders/placeholder-img2.jpg");
+	}
+
+	#projects #placeholder3 {
+		background-image: url("../images/placeholders/placeholder-img3.jpg");
+	}
+
+	#projects #placeholder4 {
+		background-image: url("../images/placeholders/placeholder-img4.jpg");
+	}
+
+	#projects #placeholder5 {
+		background-image: url("../images/placeholders/placeholder-img5.jpg");
+	}
+
+	#projects #placeholder6 {
+		background-image: url("../images/placeholders/placeholder-img6.jpg");
+	}
+
+	#projects #placeholder7 {
+		background-image: url("../images/placeholders/placeholder-img7.jpg");
+	}
+
+	#projects #placeholder8 {
+		background-image: url("../images/placeholders/placeholder-img8.jpg");
+	}
+
+	#projects #placeholder9 {
+		background-image: url("../images/placeholders/placeholder-img9.jpg");
+	}
+
+	#projects #placeholder10 {
+		background-image: url("../images/placeholders/placeholder-img10.jpg");
+	}
+
+	#projects #placeholder11 {
+		background-image: url("../images/placeholders/placeholder-img11.jpg");
+	}
+
+	#projects #placeholder12 {
+		background-image: url("../images/placeholders/placeholder-img12.jpg");
+	}
+
+	#projects .project {
+		display: block;
+		margin:auto;
+		text-align: center;
+		float: none;
+		color: transparent;
+/*		padding-left: 15px;
+		padding-right: 15px;*/
+		-webkit-filter: grayscale(0%);
+	  	-moz-filter: grayscale(0%);
+	  	-ms-filter: grayscale(0%);
+	  	-o-filter: grayscale(0%);
+	  	-webkit-transition: .5s ease-in-out;
+	  	-moz-transition: .5s ease-in-out;
+	  	-ms-transition: .5s ease-in-out;
+	  	-o-transition: .5s ease-in-out;
+	  	filter:gray;
+	  	background-size: cover;
+	  	background-position:;
+	  	filter: url("images/grayscale.svg");
+
+	}
+
+	#projects #projects-content-2 {
+		/*height:50vh;*/ 
+		display: block;
+		/*min-height: 0;*/
+	}
+
+	#projects #projects-content-2 .container {
+		width: 100%;
+		padding: 0;
+		top: auto;
+		transform: none;
+		display: inherit;
+	}
+
+	#projects .col-md-3 {
+		padding: 0;
+	}
+
+	#projects .project:hover {
+		color: white;
+		-webkit-filter: grayscale(100%);
+	  	-moz-filter: grayscale(100%); 
+	  	-mw-filter: grayscale(100%); 
+	  	-o-filter: grayscale(100%);
+	  	-webkit-transition: 1s ease-in-out;
+	  	-moz-transition: 1s ease-in-out;
+	  	-ms-transition: 1s ease-in-out;
+	  	-o-transition: 1s ease-in-out;
+		}
+
+	#projects #project1 h3 {
+		position: absolute;
+		z-index: 2;
+		width: 60%;
+		margin-left:20%; 
+		margin-right:20%;
+	}
+
+	#projects #project1 h3 a {
+		color: inherit;
+		text-decoration: none;
+
+	}
+
+	#projects #project1:hover {
+		color: white;
+		-webkit-filter: grayscale(0%);
+	  	-moz-filter: grayscale(0%); 
+	  	-mw-filter: grayscale(0%); 
+	  	-o-filter: grayscale(0%);
+	  	-webkit-transition: 1s ease-in-out;
+	  	-moz-transition: 1s ease-in-out;
+	  	-ms-transition: 1s ease-in-out;
+	  	-o-transition: 1s ease-in-out;
+	}
+
+	#projects .project h3 {
+		margin-top:0;
+		display: block;
+		text-align: center;
+		position: relative;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		-moz-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		-o-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+
+	/*Main - Me Secton*/
+
+
+/*Footer*/
+
+
+/*Smaller Widescrean Laptops*/
+
+
+@media (max-width: 1400px) and (max-height: 800px) {
+
+
+}
+
+/*Netbooks*/
+
+@media (max-width: 1025px) and (max-height: 601px) {
+
+
+}
+
+/* Tablets  - Portrait and Landscape */
+
+@media (min-device-width: 320px) and (max-device-width: 800px) 
+		and (min-device-height: 480px) and (max-device-height: 1280px) {
+
+		body {
+			font-size: 15px;
+		}
+
+		/*h1 {
+			font-size: 14vw;
+		}
+
+		h2 {
+			font-size: 8vw;
+		}
+
+		h3 {
+			font-size: 6vw;
+		}
+
+		p {
+			font-size: 4vw;
+
+		}
+
+		.container {
+			width: 100%;
+			padding-left: 5.5vw;
+			padding-right: 5.5vw;
+		}*/
+
+		.paragraph-container {
+			width: 90%;
+		}
+
+		#dev-logo-banner {
+			display: none;
+		}
+
+		/*#nav-section a {
+			font-size: 5vw;
+			padding-left: 2vw;
+			padding-right: 2vw;
+		}
+
+		#nav-section .container {
+			padding-left: 3vw;
+			padding-right: 3vw;
+		}
+
+		#dev-logo-banner {
+			display: none;
+		}
+
+		.main .img-col {
+			display: none;
+		}
+
+		.main .col-md-6, .main .col-md-8 {
+			margin-bottom: 50px;
+		}
+
+		.main .row:first-child {
+			margin-top: 0;
+		}
+
+		#work, #projects {
+			min-height: 100vh;
+
+		}
+
+		#work .content {
+			position: absolute;
+			top: 0;
+		    left: 0;
+		    right: 0;
+		    background-color: transparent;
+		    color: #fff;
+		    height: 100%;
+		}
+
+		#work .container {
+			position: relative;
+			top: 50%;
+			-webkit-transform: translateY(-50%);
+			-moz-transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+			-o-transform: translateY(-50%);
+			transform: translateY(-50%);
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		#work .row {
+			height: 100%;
+		}
+
+		#work .col-md-8 {
+			top: 0%;
+			-webkit-transform: translateY(0%);
+			-moz-transform: translateY(0%);
+			-ms-transform: translateY(0%);
+			-o-transform: translateY(0%);
+			transform: translateY(0%);
+		}
+
+		#projects .col-sm-6 {
+			width: 100%;
+		}
+
+		#projects .row:first-child {
+		margin-top:12vh;
+		}*/
+}
+
+/*Mini Tablets - Landscape*/
+
+@media (min-device-height: 320px) and (max-device-height: 600px) 
+		and (min-device-width: 480px) and (max-device-width: 960px) {
+
+	/*h1 {
+		font-size: 15.5vh; 
+	}
+
+	p {
+		font-size: 4vh;
+	}
+
+	.main .row:first-child{
+		margin-top:16vh;
+	}
+		
+	.main .img-col {
+		display: none;
+	}
+
+	#projects .container {
+		max-width: 65vw;
+	}
+
+	.paragraph-container {
+		max-width: 50vw;
+	}
+
+		#footer .sm-icon {
+		height: 7vh;
+		width: 7vh;
+	}*/
+
+}
+
+@media (min-device-height: 601px) and (max-device-height: 800px) 
+		and (min-device-width: 961px) and (max-device-width: 1280p
+
+		body {
+			font-size: 20px;
+		}
+
+		/*p {
+			font-size: 3vh
+		}*/
+
+
+	}
+
+@media (min-device-width: 320px) and (max-device-width: 800px) 
+		and (min-device-height: 480px) and (max-device-height: 1280px) 
+		and (orientation: portrait) {
+
+		/*.down-arrow-container img {
+			height: 15vw;
+			width: 15vw;
+
+		}
+
+		#video-container video {
+
+			height: 100%;
+
+		}
+
+		#footer .sm-icon {
+			min-height: 100px;
+			min-width: 100px;
+		}*/
+
+
+	}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    
+    /*#projects .porthole:hover {
+		background-color: rgba(0,0,0,0.7);
+    }
+
+    .grayscale-overlay {
+    	background-color: rgba(0,0,0,0.7);
+    }*/
+}   
+
+
+
+
+
+
+

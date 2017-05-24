@@ -1,0 +1,57 @@
+@mixin fadeIn($duration,$easing,$delay,$iterations,$fill-mode) {
+	-webkit-animation: fadeIn;
+	-moz-animation: fadeIn;
+	-ms-animation: fadeIn;
+	-o-animation: fadeIn;
+	animation: fadeIn $duration $easing $delay $iterations $fill-mode;
+}
+
+@mixin dropIn($duration,$easing,$delay,$iterations,$fill-mode) {
+	-webkit-animation: dropIn;
+	-moz-animation: dropIn;
+	-ms-animation: dropIn;
+	-o-animation: dropIn;
+	animation: dropIn $duration $easing $delay $iterations $fill-mode;
+}
+
+@mixin background-size($size) {
+	   	-webkit-background-size:$size; 
+   		-moz-background-size:$size; 
+   		-o-background-size:$size; 
+   		background-size:$size; 
+}
+
+@mixin filter($filter) {
+		-webkit-filter: $filter;
+		-moz-filter: $filter;
+		-o-filter: $filter; 
+		filter: $filter;
+} 
+
+@mixin object-fit($fit) {
+		-webkit-object-fit: $fit;
+		-moz-object-fit: $fit;
+		-ms-object-fit: $fit;
+		-o-object-fit: $fit;
+		object-fit: $fit;
+}
+
+@mixin background-image-file($path,$file) {
+	background-image: url(#{$path}#{$file});
+}
+
+@mixin transition($delay,$easing,$duration:0s,$property:all) {
+	-webkit-transition: $property $delay $duration $easing;
+  	-moz-transition: $property $delay $duration $easing;
+	-ms-transition: $property $delay $duration $easing;
+	-o-transition: $property $delay $duration $easing;
+	transition: $property $delay $duration $easing;
+}
+
+@mixin transform($transform) {
+	-webkit-transform: $transform;
+	-moz-transform: $transform;
+	-ms-transform: $transform;
+	-o-transform: $transform;
+	transform: $transform;
+}

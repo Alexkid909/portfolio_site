@@ -2,7 +2,6 @@
 	<html>
 		<head>
 			<title>Alex Robinson - Portfolio</title>
-			<!--<link type="text/css" rel="stylesheet" href="css/bootstrap-4.0.0-alpha.6-dist/css/bootstrap-grid.min.css">-->
 			<link type="text/css" rel="stylesheet" href="css/bootstrap-3.3.6-dist/css/bootstrap.min.css">			
 			<link type="text/css" rel="stylesheet" href="css/style.css">
 			<link href="https://fonts.googleapis.com/css?family=Rajdhani|Raleway" rel="stylesheet">
@@ -216,6 +215,40 @@
 				<div id="splash-footer" class="section footer">
 					<dir class="container">
 						<div class="row">
+							<div class="col-sm-3 smart-phone-full-width anim">
+								<a href="https://www.facebook.com/alexkid909" target="_blank">
+									<img class="sm-logo" src="images/facebook.png">
+									<p>
+										Follow me on facebook.
+									</p>
+								</a>
+							</div>
+							<div class="col-sm-3 smart-phone-full-width anim">
+								<a href="https://uk.linkedin.com/pub/alex-robinson/13/2a1/990" target="_blank">
+									<img class="sm-logo" src="images/linkedin.png">
+									<p>
+										Connect with me on Linkedin.
+									</p>
+								</a>
+							</div>
+							<div class="col-sm-3 smart-phone-full-width anim">
+								<a href="https://twitter.com/alexkid909" target="_blank">
+									<img class="sm-logo" src="images/twitter.png">
+									<p>
+										Follow me on Twitter.
+									</p>
+								</a>
+							</div>
+							<div class="col-sm-3 smart-phone-full-width anim">
+								<a href="https://github.com/Alexkid909" target="_blank">
+									<img class="sm-logo" src="images/github.png">
+									<p>
+										See my projects on GitHub.
+									</p>
+								</a>
+							</div>							
+						</div>
+						<div class="row">
 							<div class="col-sm-4 smart-phone-full-width anim">
 								<a href="mailto:alex.robinson578@gmail.com">
 									<img class="sm-logo" src="images/email.png">
@@ -235,32 +268,7 @@
 								</a>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-sm-4 smart-phone-full-width anim">
-								<a href="https://www.facebook.com/alexkid909" target="_blank">
-									<img class="sm-logo" src="images/facebook.png">
-									<p>
-										Follow me on facebook.
-									</p>
-								</a>
-							</div>
-							<div class="col-sm-4 smart-phone-full-width anim">
-								<a href="https://uk.linkedin.com/pub/alex-robinson/13/2a1/990" target="_blank">
-									<img class="sm-logo" src="images/linkedin.png">
-									<p>
-										Connect with me on Linkedin.
-									</p>
-								</a>
-							</div>
-							<div class="col-sm-4 smart-phone-full-width anim">
-								<a href="https://twitter.com/alexkid909" target="_blank">
-									<img class="sm-logo" src="images/twitter.png">
-									<p>
-										Follow me on Twitter.
-									</p>
-								</a>
-							</div>
-						</div>
+
 					</dir>
 				    <div id="contact-form" class="container">
 				        <div class="row">
@@ -319,10 +327,6 @@
 
 				function scrollTo(element) {
 					scrlTo = document.body.scrollTop + element.getBoundingClientRect().top - document.querySelector('#nav-icons').clientHeight;
-					console.log("scrlTo = "+scrlTo);
-					console.log("body scrollTop = "+document.body.scrollTop)
-					console.log("bounding rectangle top = "+element.getBoundingClientRect().top)
-					console.log("element height = "+document.querySelector('#nav-icons').clientHeight);
 					duration = 600;
 					scrollFromTo(document.body.scrollTop,scrlTo,duration)
 				}
@@ -342,8 +346,6 @@
 				for (var i = 0;i < navItems.length; i++) {			
 					navItems[i].addEventListener('click',toggleMobileNav);
 					navItems[i].addEventListener('click',function(e) {
-						console.log("running anon function")
-						console.log(e);
 						var target;						
 						for (var i = 0;!target;i++) {
 							if (e.path[i].localName == "a") {
@@ -352,7 +354,6 @@
 						};
 						var elmnt = document.querySelector(target.hash);
 						e.preventDefault();						
-						console.log(elmnt);
 						scrollTo(elmnt);
 					}); 
 				};

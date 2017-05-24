@@ -1,6 +1,6 @@
 %project-tile-transition-in {
 	.background-image {
-		@include transform(scale(1.2,1.2) translateY(-2.5%));			  			
+		@include transform(scale(1.2,1.2) translate(-2.5vw,-2vw));			  			
 		@include transition(15s, ease-out, 0.5s);
 	}
 

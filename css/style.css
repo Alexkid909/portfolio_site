@@ -96,11 +96,11 @@
   opacity: 0; }
 
 .projects .project:not(.placeholder):hover .background-image, .projects .project.jsinview:not(.placeholder) .background-image {
-  -webkit-transform: scale(1.2, 1.2) translateY(-2.5%);
-  -moz-transform: scale(1.2, 1.2) translateY(-2.5%);
-  -ms-transform: scale(1.2, 1.2) translateY(-2.5%);
-  -o-transform: scale(1.2, 1.2) translateY(-2.5%);
-  transform: scale(1.2, 1.2) translateY(-2.5%);
+  -webkit-transform: scale(1.2, 1.2) translate(-2vw, -2vw);
+  -moz-transform: scale(1.2, 1.2) translate(-2vw, -2vw);
+  -ms-transform: scale(1.2, 1.2) translate(-2vw, -2vw);
+  -o-transform: scale(1.2, 1.2) translate(-2vw, -2vw);
+  transform: scale(1.2, 1.2) translate(-2vw, -2vw);
   -webkit-transition: all 15s 0.5s ease-out;
   -moz-transition: all 15s 0.5s ease-out;
   -ms-transition: all 15s 0.5s ease-out;
@@ -516,6 +516,8 @@ img.sm-logo {
   background-image: url("../images/projects/slider.jpg"); }
 .projects #suggestion_box .background-image {
   background-image: url("../images/projects/suggestion_box.png"); }
+.projects #rewards .background-image {
+  background-image: url("../images/projects/rewards.png"); }
 .projects #jsdrums .background-image {
   background-image: url("../images/projects/jsdrums.jpg"); }
 .projects #jsclock .background-image {

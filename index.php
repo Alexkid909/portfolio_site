@@ -131,6 +131,19 @@
 										</div>
 									</div>
 								</a>
+								<a target="_blank" href="projects/rewards/index.html">
+									<div class="col-lg-3 col-sm-6  col-xs-12 project anim html5 css3 bootstrap sass js" id="rewards">
+										<div class="background-image">
+										</div>
+										<div class="overlay">
+											<div class="content-container">
+												<h3>Rewards!</h3>
+												<span class="divider"></span>
+												<p class="para-small">This rewards app built with vanilla JS allows a carer / parent to define tasks that can be claimed by kids in order to score points that can be used to redeem rewards.</p>
+											</div>
+										</div>
+									</div>
+								</a>								
 								<a target="_blank" href="projects/jsdrums/index.html">
 									<div class="col-lg-3 col-sm-6  col-xs-12 project anim js" id="jsdrums">
 										<div class="background-image"></div>
@@ -165,12 +178,7 @@
 											</div>									
 										</div>		
 									</div>
-								</a>								
-<!-- 								<div class="col-lg-3 col-sm-6  col-xs-12 project anim placeholder" id="placeholder4">
-									<div class="background-image">
-											<h3>Coming Soon</h3>
-									</div>
-								</div> -->
+								</a>							
 								<a target="_blank" href="projects/slider/index.html">
 									<div class="col-lg-3 col-sm-6  col-xs-12 project anim html5 css3 js jquery bootstrap" id="slider">
 										<div class="background-image">
@@ -194,11 +202,11 @@
 											<h3>Coming Soon</h3>
 									</div>
 								</div>
-								<div class="col-lg-3 col-sm-6  col-xs-12 project anim placeholder" id="placeholder8">
+<!-- 								<div class="col-lg-3 col-sm-6  col-xs-12 project anim placeholder" id="placeholder8">
 									<div class="background-image">
 											<h3>Coming Soon</h3>
 									</div>
-								</div>
+								</div> -->
 							</div>
 						</div>
 					</div>

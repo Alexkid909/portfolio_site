@@ -11,6 +11,7 @@
 			<script src="js/app.js"></script>
 			<script src="js/jquery.viewport.mini.js"></script>
 <!-- 			<script src="http://192.168.1.244:8080/target/target-script-min.js#anonymous"></script> -->
+			<meta name="viewport" content="width=device-width, initial-scale=1">
 			<meta property="og:site_name" content="Alex Robinson - Portfolio"/>
 			<meta property="og:title" content="Alex Robinson - Front-end Web Developer - Portfolio."/>
 			<meta property="og:description" content="Hi! I'm Alex, a front end web developer based in Newcastle upon Tyne, UK.  Welcome to my portfolio site where you can findo out more about me and take a look at the projects I've worked on."/>
@@ -92,7 +93,9 @@
 						<div class="row">
 							<div class="col-lg-6 col-sm-10 col-lg-offset-3 col-sm-offset-1">
 								<div class="text-container">
-									<p>Here is a selection of recent projects I've worked on.  If you'd like more information about any of the projects I've been involved in, please get in touch.</p> 
+									<p>Here is a selection of recent projects I've worked on.  If you'd like more information about any of the projects I've been involved in, please get in touch.  Or why not take a look at all of my projects on <a href="https://github.com/Alexkid909" target="_blank">GitHub</a>.
+
+									</p> 
 								</div>
 							</div>
 						</div>

@@ -96,11 +96,11 @@
   opacity: 0; }
 
 .projects .project:not(.placeholder):hover .background-image, .projects .project.jsinview:not(.placeholder) .background-image {
-  -webkit-transform: scale(1.2, 1.2) translate(-2vw, -2vw);
-  -moz-transform: scale(1.2, 1.2) translate(-2vw, -2vw);
-  -ms-transform: scale(1.2, 1.2) translate(-2vw, -2vw);
-  -o-transform: scale(1.2, 1.2) translate(-2vw, -2vw);
-  transform: scale(1.2, 1.2) translate(-2vw, -2vw);
+  -webkit-transform: scale(1.2, 1.2) translate(-2.5vw, -2vw);
+  -moz-transform: scale(1.2, 1.2) translate(-2.5vw, -2vw);
+  -ms-transform: scale(1.2, 1.2) translate(-2.5vw, -2vw);
+  -o-transform: scale(1.2, 1.2) translate(-2.5vw, -2vw);
+  transform: scale(1.2, 1.2) translate(-2.5vw, -2vw);
   -webkit-transition: all 15s 0.5s ease-out;
   -moz-transition: all 15s 0.5s ease-out;
   -ms-transition: all 15s 0.5s ease-out;
@@ -650,7 +650,7 @@ img.sm-logo {
   .paragraph-container {
     width: 80%; } }
 /* Tablets  - Portrait*/
-@media (min-device-width: 360px) and (max-device-width: 1279px) and (min-device-height: 640px) {
+@media (min-device-width: 320px) and (max-device-width: 1279px) and (min-device-height: 568px) {
   body {
     font-size: 2.5vw; }
 

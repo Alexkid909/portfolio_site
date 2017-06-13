@@ -2,27 +2,48 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Suggestion Box</title>
 	<link href="https://fonts.googleapis.com/css?family=Advent+Pro|Comfortaa" rel="stylesheet">	
 	<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/
 css/bootstrap.min.css" rel="stylesheet">	
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<script src="js/vendor/angular.min.js"></script>
-	<script src="js/vendor/angular-route.js"></script>
+	<script src="js/vendor/angular-route.min.js"></script>
+	<script src="js/vendor/angular-aria.min.js"></script>
+	<script src="js/vendor/angular-animate.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+	<script src="js/vendor/angular-messages.min.js"></script>
 
 </head>
-<body ng-app="SuggestionBox" ng-controller="MainController">
+<body ng-app="SuggestionBox" ng-controller="MainController as main">
+	<div class="full-app-greyout-filter" ng-click="main.sharedScope.toggleEditMode()" ng-class="{'active' : main.sharedScope.data.editMode || main.sharedScope.data.dialogMode}"></div>
 	<div class="main-container">	
 		<div class="header">
 			<div class="container-fluid">
-				<h1 class="suggestion-box-header">
-					<a href="#/">
-						{{header}}
-					</a>
-				</h1>
+					<h1 class="suggestion-box-header">
+						<a href="#/">
+							{{header}}
+						</a>
+					</h1>
+					<ul class="nav">
+						<li	class="li-sign_in">
+							<a ng-hide="main.users.variables.currentUser.name" href="#/sign_in/">Sign In</a>
+							<a ng-controller="SignInController as SignIn" ng-click="signOut($event)" ng-show="main.users.variables.currentUser.name" href="">Sign Out</a>
+						</li>
+					</ul>
+          <div class="messaging">
+            <p ng-hide="main.users.variables.currentUser.name" class="">Sign in to add, vote, or comment on a suggestion.</p>
+            <p ng-show="main.users.variables.currentUser.name">Hi {{main.users.variables.currentUser.name}}! You can add, vote, or comment on a suggestion.</p>          
+          </div>
 			</div>	
 		</div>
 		<div class="main">
+			<div class="dialog confirm" ng-class="{active : main.sharedScope.data.dialogMode}">
+				<p>Are you sure?</p>
+				<button ng-click="main.sharedScope.toggleConfirmDialog()" class="btn-no">No</button>
+				<button ng-click="main.sharedScope.deleteItem()" class="btn-yes">Yes</button>
+			</div>
 			<div ng-view>	
 			</div>
 		</div>	
@@ -35,9 +56,15 @@ css/bootstrap.min.css" rel="stylesheet">
 	<!-- Controllers -->
 	<script src="js/controllers/MainController.js"></script>
 	<script src="js/controllers/SuggestionController.js"></script>
+	<script src="js/controllers/SignInController.js"></script>
 
 	<!-- Services -->
 	<script src="js/services/suggestions.js"></script>
+  <script src="js/services/shared-scope.js"></script>  
+	<script src="js/services/users.js"></script>
 
+	<!-- Directives -->
+	<script src="js/directives/suggestion.js"></script>
+	<script src="js/directives/comment.js"></script>
 </body>
 </html>

@@ -1,21 +1,16 @@
 <div class="comment-container row">
 	<div  class="col-sm-12">
-		<div class="suggestion-content-container  col-sm-11">
-			<p class="suggestion-title">{{suggestion.title}}</p>
+		<div class="suggestion-content-container col-sm-12">
+			<p>
+				<span class="author suggestion-author">{{suggestion.authorName}}</span>			
+				<span class="title suggestion-title"> - {{suggestion.title}}</span>
+			</p>
 			<span class="suggestion-divider"></span>
 		</div>
-		<div ng-repeat="comment in comments" class="comment">
-			<p> {{comment.body}}</p>
-			<span class="comment-divider"></span>
-			<p>
-				{{comment.votes}}
-				<span class="glyphicon glyphicon-plus-sign" ng-click="upVote(comment)"></span>
-				<span class="glyphicon glyphicon-minus-sign" ng-click="downVote(comment)"></span>				
-			</p>
-		</div>							
+		<comment ng-repeat="comment in comments | filter:{'deleted' : 'false'}"></comment>						
 	</div>
 </div>
-<form ng-submit="addComment()" style="margin-top: 50px">
+<form class="form-comment" ng-show="main.users.variables.currentUser.name" ng-submit="addComment()">
 	<div class="form-group">
 		<input type="text" class="form-control" placeholder="Comment here" ng-model="body"></input>
 	</div>

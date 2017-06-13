@@ -1,0 +1,24 @@
+<div class="comment col-sm-10 col-sm-offset-2 col-xs-11 col-xs-offset-1" ng-class="{active : main.sharedScope.data.itemBeingEdited == $index}">
+	<p>				
+		<span class="author comment-author">{{comment.authorName}}</span>
+		<span> - </span>			
+		<span class="title">{{comment.body}}</span>
+	</p>
+	<span class="comment-divider"></span>
+	<div class="comment-footer row">
+		<div class="votes row col-xs-6">
+			<div class="votes-container">
+				<span class="glyphicon glyphicon-thumbs-up"></span>
+				<span>{{comment.votes}}</span>
+			</div>
+			<div class="votes-button-container">
+				<span class="glyphicon glyphicon-plus-sign"	ng-show="!(main.users.getCurrentUserItemScore(comment,'comment') > 0) && main.users.variables.currentUser.id != comment.authorId && main.users.variables.currentUser.id" ng-click="vote(comment,'up')"></span>				
+				<span class="glyphicon glyphicon-minus-sign" ng-show="!(main.users.getCurrentUserItemScore(comment,'comment') < 0) && main.users.variables.currentUser.id != comment.authorId && main.users.variables.currentUser.id" ng-click="vote(comment,'down')"></span>			
+			</div>
+			<div class="item-toolbar">
+				<span ng-show="main.users.variables.currentUser.id == comment.authorId" class="glyphicon glyphicon-remove-sign" ng-click="main.sharedScope.toggleConfirmDialog(comment)"></span>
+				<span ng-show="main.users.variables.currentUser.id == comment.authorId" class="glyphicon glyphicon-edit" ng-click="main.sharedScope.editItem($index,$event,comment,'comment')"></span>
+			</div>
+		</div>
+	</div>
+</div>	

@@ -137,7 +137,8 @@ var main = function() {
 		android: ua.indexOf("android"),
 		ipad: ua.indexOf("ipad"),
 		iphone: ua.indexOf("iphone"),
-		windowsPhone: ua.indexOf("windows phone")
+		windowsPhone: ua.indexOf("windows phone"),
+		kindle: ua.indexOf("silk")
 	}
 
 

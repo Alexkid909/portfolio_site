@@ -93,7 +93,7 @@
 						<div class="row">
 							<div class="col-lg-6 col-sm-10 col-lg-offset-3 col-sm-offset-1">
 								<div class="text-container">
-									<p>Here is a selection of recent projects I've worked on.  If you'd like more information about any of the projects I've been involved in, please get in touch.  Or why not take a look at all of my projects on <a href="https://github.com/Alexkid909" target="_blank">GitHub</a>.
+									<p>Here is a selection of recent projects I've worked on.  If you'd like more information about any of my work, please get in touch.  Or why not take a look at my code on <a href="https://github.com/Alexkid909" target="_blank">GitHub</a> or <a target="_blank" href="https://www.codewars.com/users/alexkid9091">Codewars.com</a>.
 
 									</p> 
 								</div>
@@ -126,7 +126,7 @@
 											<div class="content-container">
 												<h3>Suggestion Box</h3>
 												<span class="divider"></span>
-												<p class="para-small">This front-end single page suggestion and comment app is the result of my codecademy.com AngularJS final project. It allows a user to submit, upvote and comment on suggestions. </p>
+												<p class="para-small">A front-end, single page AngularJS app allows a user to submit, edit, delete, upvote and comment on suggestions. Built utilizing MVC, Routing, Services, Custom Directives and Two Way Data Binding. </p>
 											</div>
 										</div>
 									</div>
@@ -139,7 +139,7 @@
 											<div class="content-container">
 												<h3>Rewards!</h3>
 												<span class="divider"></span>
-												<p class="para-small">This rewards app built with vanilla JS allows a carer / parent to define tasks that can be claimed by kids in order to score points that can be used to redeem rewards.</p>
+												<p class="para-small">This rewards app is built with vanilla JS and allows a carer / parent to define tasks that can be claimed by kids in order to score points that can be used to redeem rewards.</p>
 											</div>
 										</div>
 									</div>
@@ -150,7 +150,7 @@
 										<div class="overlay">
 											<div class="content-container">
 												<h3>JavaScript Drums</h3>
-												<span class="divider"></span><p class="para-small">This is a simple app that plays a different drum sound on each key press or click.  I completed this project whilst working on the javascript30.com challenge.  To test my JS knowledge I decided to build this app without first watching the tutorial.</p>	
+												<span class="divider"></span><p class="para-small">A simple app built using vanilla JS, that plays a different drum sound on each key press or click.  I completed this project whilst working on the javascript30.com challenge.</p>	
 											</div>									
 										</div>		
 									</div>
@@ -191,17 +191,21 @@
 											</div>
 										</div>
 									</div>
-								</a>							
-								<div class="col-lg-3 col-sm-6  col-xs-12 project anim placeholder" id="placeholder6">
-									<div class="background-image">
-											<h3>Coming Soon</h3>
+								</a>
+								<a href="">						
+									<div class="col-lg-3 col-sm-6  col-xs-12 project anim placeholder" id="placeholder6">
+										<div class="background-image">
+												<h3>Coming Soon</h3>
+										</div>
 									</div>
-								</div>
-								<div class="col-lg-3 col-sm-6  col-xs-12 project anim placeholder" id="placeholder7">
-									<div class="background-image">
-											<h3>Coming Soon</h3>
+								</a>
+								<a href="">	
+									<div class="col-lg-3 col-sm-6  col-xs-12 project anim placeholder" id="placeholder7">
+										<div class="background-image">
+												<h3>Coming Soon</h3>
+										</div>
 									</div>
-								</div>
+								</a>
 <!-- 								<div class="col-lg-3 col-sm-6  col-xs-12 project anim placeholder" id="placeholder8">
 									<div class="background-image">
 											<h3>Coming Soon</h3>
@@ -378,61 +382,61 @@
 
 			<script type="text/javascript">
 
-			//Sets Project Filter Bar to correct height
+				//Sets Project Filter Bar to correct height
 
-			function setVerticalBannerHeight() {
-				a = document.getElementById('projects-container');
-				aH = a.offsetHeight;
-				b = document.getElementsByClassName("vertical-banner")[0];
-				b.style.height = aH+"px"
-			}
+				function setVerticalBannerHeight() {
+					a = document.getElementById('projects-container');
+					aH = a.offsetHeight;
+					b = document.getElementsByClassName("vertical-banner")[0];
+					b.style.height = aH+"px"
+				}
 
-			setVerticalBannerHeight()
+				setVerticalBannerHeight()
 
 			</script>
 			<script type="text/javascript">  // Transitions in project vertical nav bar on hover over projects.
 
-			var projNavBarVisible = false;
+				var projNavBarVisible = false;
 
-			a = document.getElementsByClassName('vertical-banner')[0];
+				a = document.getElementsByClassName('vertical-banner')[0];
 
-			function removeAnimSetTransX0() {
-						a.style.transform = "translateX(0)";
-						a.style.animation = "";
-						projNavBarVisible = true;
-						a.removeEventListener("animationend",removeAnimSetTransX0);
-			}
+				function removeAnimSetTransX0() {
+							a.style.transform = "translateX(0)";
+							a.style.animation = "";
+							projNavBarVisible = true;
+							a.removeEventListener("animationend",removeAnimSetTransX0);
+				}
 
-			function slideOutVerticalBanner(callback) {
-				a.addEventListener("animationend",removeAnimSetTransX100);
-				a.style.animation = "SlideLeft 200ms ease-in 1s 1 reverse both";
-			}
+				function slideOutVerticalBanner(callback) {
+					a.addEventListener("animationend",removeAnimSetTransX100);
+					a.style.animation = "SlideLeft 200ms ease-in 1s 1 reverse both";
+				}
 
-			function removeAnimSetTransX100() {
-						a.style.transform = "translateX(100%)";
-						a.style.animation = "";
-						projNavBarVisible = false;
-						a.removeEventListener("animationend",removeAnimSetTransX100);
-			}
+				function removeAnimSetTransX100() {
+							a.style.transform = "translateX(100%)";
+							a.style.animation = "";
+							projNavBarVisible = false;
+							a.removeEventListener("animationend",removeAnimSetTransX100);
+				}
 
-			function slideInVerticalBanner(callback) {
-				a.addEventListener("animationend",removeAnimSetTransX0);
-				a.style.animation = "SlideLeft 200ms ease-in 1s 1 normal both";
-			}
+				function slideInVerticalBanner(callback) {
+					a.addEventListener("animationend",removeAnimSetTransX0);
+					a.style.animation = "SlideLeft 200ms ease-in 1s 1 normal both";
+				}
 
-			function toggleProjectsNav(e) {
-				if (projNavBarVisible && (e.type == "mouseleave")) {
-					slideOutVerticalBanner();
-				} else if ((projNavBarVisible == false) && (e.type == "mouseover")) {
-					slideInVerticalBanner();
-				} else {
-					return false
+				function toggleProjectsNav(e) {
+					if (projNavBarVisible && (e.type == "mouseleave")) {
+						slideOutVerticalBanner();
+					} else if ((projNavBarVisible == false) && (e.type == "mouseover")) {
+						slideInVerticalBanner();
+					} else {
+						return false
+					};
 				};
-			};
 
-			x = document.getElementById('projects-container');
-			x.addEventListener("mouseover",toggleProjectsNav);
-			x.addEventListener("mouseleave",toggleProjectsNav);
+				x = document.getElementById('projects-container');
+				x.addEventListener("mouseover",toggleProjectsNav);
+				x.addEventListener("mouseleave",toggleProjectsNav);
 		
 			</script>
 

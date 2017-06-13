@@ -8,7 +8,6 @@
 body {
 	font-family: 'Rajdhani';
 		color: #fff;
-		max-width: 1920px;
 		font-size: 2vh;
 		text-align: center;
 		background-color: rgb(20,20,20)
@@ -623,13 +622,6 @@ p, label {
 		}
 
 
-	}	
-
-
-
-	.project {
-
-
 	}
 
 	#projects-content-2 {
@@ -653,26 +645,19 @@ p, label {
 	.paragraph-container {
 		width: 50%;
 	}
-
 }
 
 /*Netbooks*/
 
 @media (max-width: 900px) {
-
 	.paragraph-container {
 		width: 80%;
 	}
-
-
 }
 
+/* Tablets & Smartphones - Portrait*/
 
-
-/* Tablets  - Portrait*/
-
-@media (min-device-width: 320px) and (max-device-width: 1279px) 
-		and (min-device-height: 568px) {
+@media (max-aspect-ratio: 1/1) {
 
 	body {
 		font-size: 2.5vw;
@@ -710,9 +695,9 @@ p, label {
 				display: block;
 			}
 		}
-	&.active {
-		left: 0;
-	}
+		&.active {
+			left: 0;
+		}
 	}
 
 	.paragraph-container {
@@ -736,6 +721,7 @@ p, label {
 		}
 	}
 
+
 	.form-horizontal {
 		label.smart-phone-full-width {
 			text-align: left;
@@ -754,151 +740,155 @@ p, label {
 		label.smart-phone-full-width {
 			text-align: left;
 		}
-	}	
+	}
+
+	.col-lg-3 {
+		width: 50%;
+	}
+
+	/*Mini Tablets - Portrait*/
+
+	@media (max-device-height: 960px) {
+
+			body {
+				font-size: 2.65vw;
+			}
+
+			p, label {
+				font-size: 1.5em;
+				font-weight: 600;
+			}
+
+			.form-control {
+					font-size: 1.3em;
+			}
+
+
+			#header-section-container {
+				width: 96.5%;
+			}
+
+			.section {
+				.project {
+					height: 100vw;
+					width: 100%;
+
+					h3 {
+						font-size: 4em;
+					}
+
+					p.para-small {
+						margin:10px 15vw;
+						font-size: 1.35em;			
+					}
+				}
+			}
+
+	}
+
+	//Smartphones  - Portrait
+
+	@media (max-device-height: 736px) {
+
+		body {
+			font-size: 3.6vw;
+		}
+
+		h1 {
+			font-size: 4.5em;
+		}
+
+		.smart-phone-full-width {
+			width: 100%;
+		}
+
+		.col-sm-offset-2 {
+			margin-left: 0;
+		}
+
+		.btn {
+			width: 100%;
+		}
+
+	}
 
 }
 
-/* Tablets  - Landscape*/
+/* Tablets & Smartphones - Landscape*/
 
+@media (min-aspect-ratio: 1/1) {
 
-@media (min-device-height: 640px) and (max-device-height: 800px)
-		and (min-device-width: 360px) and (max-device-width: 1280px) {
+	@media (min-device-height: 640px) and (max-device-height: 800px)
+			and (min-device-width: 360px) and (max-device-width: 1280px) {
 
-		body {
-			font-size: 1.25vw;
-		}
+			body {
+				font-size: 1.25vw;
+			}
 
-		#dev-logo-banner {
-			display: none;
-		}
+			#dev-logo-banner {
+				display: none;
+			}
+	}
 
+	/*Mini Tablets - Landscape*/
 
-}
+	@media (max-device-height: 600px) 
+			and (min-device-width: 480px) and (max-device-width: 960px) {
 
-/*Mini Tablets - Portrait*/
+			body {
+				font-size: 1.55vw;
+			}
 
-@media (max-device-width: 600px) 
-		and (min-device-height: 480px) and (max-device-height: 960px) {
+			p {
+				font-weight: 600;			
+			}
 
-		body {
-			font-size: 2.65vw;
-		}
+			.projects {
 
-		p, label {
-			font-size: 1.5em;
-			font-weight: 600;
-		}
+				.content-container {
 
-		.form-control {
-				font-size: 1.3em;
-		}
-
-
-		#header-section-container {
-			width: 96.5%;
-		}
-
-		.section {
-			.project {
-				height: 100vw;
-				width: 100%;
-
-				h3 {
-					font-size: 4em;
 				}
 
 				p.para-small {
-					margin:10px 15vw;
-					font-size: 1.35em;			
+					font-size: 1.35em;
+					margin:10px 7.5vw;			
+				}
+
+			}
+
+
+			.paragraph-container {
+				width: 50%;
+			}
+
+			.section {
+				.project {
+					height: 50vw;
 				}
 			}
-		}
 
-}
+	}
 
-/*Mini Tablets - Landscape*/
+	//Smartphones - Landscape 
 
-@media (max-device-height: 600px) 
-		and (min-device-width: 480px) and (max-device-width: 960px) {
+	@media (max-device-width: 736px) and (max-device-height: 414px) {
+
 
 		body {
-			font-size: 1.55vw;
+			font-size: 1.9vw;
 		}
 
-		p {
-			font-weight: 600;			
-		}
-
-		.projects {
-
-			.content-container {
-
+		.form-horizontal {
+			.smart-phone-full-width {
+				width:100%;
 			}
 
-			p.para-small {
-				font-size: 1.35em;
-				margin:10px 7.5vw;			
+			label.smart-phone-full-width {
+				text-align: left;
 			}
+		}		
 
-		}
-
-
-		.paragraph-container {
-			width: 50%;
-		}
-
-		.section {
-			.project {
-				height: 50vw;
-			}
-		}
-
-}
-
-//Smartphones  - Portrait
-
-@media (max-device-width: 414px) and (max-device-height: 736px) {
-
-	body {
-		font-size: 3.6vw;
 	}
-
-	h1 {
-		font-size: 4.5em;
-	}
-
-	.smart-phone-full-width {
-		width: 100%;
-	}
-
-	.col-sm-offset-2 {
-		margin-left: 0;
-	}
-
-	.btn {
-		width: 100%;
-	}
-
-}
-
-//Smartphones - Landscape 
-
-@media (max-device-width: 736px) and (max-device-height: 414px) {
-
-
-	body {
-		font-size: 1.9vw;
-	}
-
-	.form-horizontal {
-		.smart-phone-full-width {
-			width:100%;
-		}
-
-		label.smart-phone-full-width {
-			text-align: left;
-		}
-	}		
 
 }
 

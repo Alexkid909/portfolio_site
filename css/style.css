@@ -232,7 +232,6 @@
 body {
   font-family: 'Rajdhani';
   color: #fff;
-  max-width: 1920px;
   font-size: 2vh;
   text-align: center;
   background-color: #141414; }
@@ -649,8 +648,8 @@ img.sm-logo {
 @media (max-width: 900px) {
   .paragraph-container {
     width: 80%; } }
-/* Tablets  - Portrait*/
-@media (min-device-width: 320px) and (max-device-width: 1279px) and (min-device-height: 568px) {
+/* Tablets & Smartphones - Portrait*/
+@media (max-aspect-ratio: 1 / 1) {
   body {
     font-size: 2.5vw; }
 
@@ -716,16 +715,13 @@ img.sm-logo {
   .form-horizontal .smart-phone-full-width {
     width: 100%; }
   .form-horizontal label.smart-phone-full-width {
-    text-align: left; } }
-/* Tablets  - Landscape*/
-@media (min-device-height: 640px) and (max-device-height: 800px) and (min-device-width: 360px) and (max-device-width: 1280px) {
-  body {
-    font-size: 1.25vw; }
+    text-align: left; }
 
-  #dev-logo-banner {
-    display: none; } }
-/*Mini Tablets - Portrait*/
-@media (max-device-width: 600px) and (min-device-height: 480px) and (max-device-height: 960px) {
+  .col-lg-3 {
+    width: 50%; }
+
+  /*Mini Tablets - Portrait*/ }
+@media (max-aspect-ratio: 1 / 1) and (max-device-height: 960px) {
   body {
     font-size: 2.65vw; }
 
@@ -747,8 +743,31 @@ img.sm-logo {
     .section .project p.para-small {
       margin: 10px 15vw;
       font-size: 1.35em; } }
-/*Mini Tablets - Landscape*/
-@media (max-device-height: 600px) and (min-device-width: 480px) and (max-device-width: 960px) {
+@media (max-aspect-ratio: 1 / 1) and (max-device-height: 736px) {
+  body {
+    font-size: 3.6vw; }
+
+  h1 {
+    font-size: 4.5em; }
+
+  .smart-phone-full-width {
+    width: 100%; }
+
+  .col-sm-offset-2 {
+    margin-left: 0; }
+
+  .btn {
+    width: 100%; } }
+/* Tablets & Smartphones - Landscape*/
+@media (min-aspect-ratio: 1 / 1) and (min-device-height: 640px) and (max-device-height: 800px) and (min-device-width: 360px) and (max-device-width: 1280px) {
+  body {
+    font-size: 1.25vw; }
+
+  #dev-logo-banner {
+    display: none; } }
+@media (min-aspect-ratio: 1 / 1) {
+  /*Mini Tablets - Landscape*/ }
+@media (min-aspect-ratio: 1 / 1) and (max-device-height: 600px) and (min-device-width: 480px) and (max-device-width: 960px) {
   body {
     font-size: 1.55vw; }
 
@@ -764,22 +783,7 @@ img.sm-logo {
 
   .section .project {
     height: 50vw; } }
-@media (max-device-width: 414px) and (max-device-height: 736px) {
-  body {
-    font-size: 3.6vw; }
-
-  h1 {
-    font-size: 4.5em; }
-
-  .smart-phone-full-width {
-    width: 100%; }
-
-  .col-sm-offset-2 {
-    margin-left: 0; }
-
-  .btn {
-    width: 100%; } }
-@media (max-device-width: 736px) and (max-device-height: 414px) {
+@media (min-aspect-ratio: 1 / 1) and (max-device-width: 736px) and (max-device-height: 414px) {
   body {
     font-size: 1.9vw; }
 

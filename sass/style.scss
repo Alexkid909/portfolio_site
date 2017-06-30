@@ -409,6 +409,16 @@ p, label {
 		}
 	}
 
+	#bet_now {
+		.background-image {
+			padding: 0 1em;
+			background-size: 80%;
+			background-repeat: no-repeat;
+			background-image: url("../images/projects/bet-now-logo.png");
+			background-color: #000;
+		}
+	}	
+
 	#rewards {
 		.background-image {
 			background-image: url("../images/projects/rewards.png");

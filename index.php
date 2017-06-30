@@ -119,6 +119,19 @@
 					<div class="section content projects" id="project-tiles-1">
 						<div class="container">
 							<div class="row">
+								<a target="_blank" href="projects/betting/index.html">
+									<div class="col-lg-3 col-sm-6  col-xs-12 project anim html5 css3 sass js angularjs bootstrap" id="bet_now">
+										<div class="background-image">
+										</div>
+										<div class="overlay">
+											<div class="content-container">
+												<h3>Bet Now</h3>
+												<span class="divider"></span>
+												<p class="para-small">A front-end, single page app allowing the user to choose from a list of bets enter a stake an place their bets.  Built utilizing AngularJS and making use of Routing, Services, Custom Directives and Two Way Data Binding, this app gets data via a remote API using the AngularJS $http service.    </p>
+											</div>
+										</div>
+									</div>
+								</a>
 								<a target="_blank" href="projects/suggestion_box/index.html">
 									<div class="col-lg-3 col-sm-6  col-xs-12 project anim html5 css3 js angularjs bootstrap" id="suggestion_box">
 										<div class="background-image">
@@ -200,18 +213,13 @@
 										</div>
 									</div>
 								</a>
-								<a href="">	
+<!-- 								<a href="">	
 									<div class="col-lg-3 col-sm-6  col-xs-12 project anim placeholder" id="placeholder7">
 										<div class="background-image">
 												<h3>Coming Soon</h3>
 										</div>
 									</div>
-								</a>
-<!-- 								<div class="col-lg-3 col-sm-6  col-xs-12 project anim placeholder" id="placeholder8">
-									<div class="background-image">
-											<h3>Coming Soon</h3>
-									</div>
-								</div> -->
+								</a> -->
 							</div>
 						</div>
 					</div>

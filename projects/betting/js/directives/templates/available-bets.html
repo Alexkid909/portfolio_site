@@ -1,0 +1,8 @@
+<div class="bets">
+	<div ng-repeat="event in events" class="event-wrapper">
+		<div class="event">
+			<span>Win {{event.name}}</span>		
+		</div>
+		<bet decimal-odds="{{decimalOdds.value}}" ng-repeat="bet in event.bets" class="bet-wrapper" ng-click="addBet(event.name,bet)" name="{{bet.name}}" numerator="{{bet.odds.numerator}}" denominator="{{bet.odds.denominator}}">bet</bet>
+	</div>
+</div>

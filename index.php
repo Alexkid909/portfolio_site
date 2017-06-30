@@ -74,7 +74,7 @@
 				</div>
 			</div>
 			<div class="main" id="splash">
-				<div class="section content anim" id="work-content">
+				<div class="section content" id="work-content">
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-6 col-sm-10 col-lg-offset-3 col-sm-offset-1">
@@ -89,7 +89,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="section content anim" id="projects-content-1">
+				<div class="section content" id="projects-content-1">
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-6 col-sm-10 col-lg-offset-3 col-sm-offset-1">
@@ -225,7 +225,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="section content anim" id="me-content">
+				<div class="section content" id="me-content">
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-6 col-sm-10 col-lg-offset-3 col-sm-offset-1">
@@ -240,7 +240,7 @@
 				<div id="splash-footer" class="section footer">
 					<dir class="container">
 						<div class="row">
-							<div class="col-sm-3 smart-phone-full-width anim">
+							<div class="col-sm-3 smart-phone-full-width">
 								<a href="https://www.facebook.com/alexkid909" target="_blank">
 									<img class="sm-logo" src="images/facebook.png">
 									<p>
@@ -248,7 +248,7 @@
 									</p>
 								</a>
 							</div>
-							<div class="col-sm-3 smart-phone-full-width anim">
+							<div class="col-sm-3 smart-phone-full-width">
 								<a href="https://uk.linkedin.com/pub/alex-robinson/13/2a1/990" target="_blank">
 									<img class="sm-logo" src="images/linkedin.png">
 									<p>
@@ -256,7 +256,7 @@
 									</p>
 								</a>
 							</div>
-							<div class="col-sm-3 smart-phone-full-width anim">
+							<div class="col-sm-3 smart-phone-full-width">
 								<a href="https://twitter.com/alexkid909" target="_blank">
 									<img class="sm-logo" src="images/twitter.png">
 									<p>
@@ -264,7 +264,7 @@
 									</p>
 								</a>
 							</div>
-							<div class="col-sm-3 smart-phone-full-width anim">
+							<div class="col-sm-3 smart-phone-full-width">
 								<a href="https://github.com/Alexkid909" target="_blank">
 									<img class="sm-logo" src="images/github.png">
 									<p>
@@ -274,19 +274,19 @@
 							</div>							
 						</div>
 						<div class="row">
-							<div class="col-sm-4 smart-phone-full-width anim">
+							<div class="col-sm-4 smart-phone-full-width">
 								<a href="mailto:alex.robinson578@gmail.com">
 									<img class="sm-logo" src="images/email.png">
 									<p>Send me an email.</p>
 								</a>
 							</div>
-							<div class="col-sm-4 smart-phone-full-width anim">
+							<div class="col-sm-4 smart-phone-full-width">
 								<a href="skype:alexkid9090?chat">
 									<img class="sm-logo" src="images/skype.png">
 									<p>Skype me.</p>
 								</a>
 							</div>
-							<div class="col-sm-4 smart-phone-full-width anim">
+							<div class="col-sm-4 smart-phone-full-width">
 								<a href="https://m.me/alexkid909" target="_blank">
 									<img class="sm-logo" src="images/messenger.png">
 									<p>Send me a message.</p>
@@ -298,27 +298,27 @@
 				    <div id="contact-form" class="container">
 				        <div class="row">
 				            <form class="form-horizontal" id="ajax-contact" method="post" action="mailer.php">    
-				                <div class="form-group anim">
+				                <div class="form-group">
 				                    <label class="col-sm-2 smart-phone-full-width control-label" for="name">Your Name:</label>
 				                    <div class="col-sm-8 smart-phone-full-width">
 				                        <input class="form-control" type="text" id="name" name="name" value="" required>
 				                    </div>
 				                </div>
 
-				                <div class="form-group anim">
+				                <div class="form-group">
 				                    <label class="col-sm-2 smart-phone-full-width control-label" for="email">Your Email:</label>
 				                    <div class="col-sm-8 smart-phone-full-width">
 				                        <input class="form-control" type="email" id="email" name="email" value="" required>
 				                    </div>
 				                </div>
 
-				                <div class="form-group anim">
+				                <div class="form-group">
 				                    <label class="col-sm-2 smart-phone-full-width control-label" for="message">Message:</label>
 				                    <div class="col-sm-8 smart-phone-full-width">
 				                        <textarea class="form-control" id="message" name="message" rows="8" required></textarea>
 				                    </div>
 				                </div>
-				                <div class="form-group anim">
+				                <div class="form-group">
 				                    <div class="col-sm-12 smart-phone-full-width">
 				                        <button class="btn btn-primary" type="submit">Send</button>
 				                    </div>

@@ -111,6 +111,7 @@
 							<li id="js"><img class="dev_logo" src="images/javascript-logo-white.png"></li>
 							<li id="jquery"><img class="dev_logo" src="images/jquery-white.png"></li>
 							<li id="angularjs"><img class="dev_logo" src="images/AngularJS.png"></li>
+							<li id="sass"><img class="dev_logo" src="images/sass.png"></li>
 							<li id="all">All</li>
 						</ul>
 					</div>

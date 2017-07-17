@@ -214,13 +214,6 @@
 										</div>
 									</div>
 								</a>
-<!-- 								<a href="">	
-									<div class="col-lg-3 col-sm-6  col-xs-12 project anim placeholder" id="placeholder7">
-										<div class="background-image">
-												<h3>Coming Soon</h3>
-										</div>
-									</div>
-								</a> -->
 							</div>
 						</div>
 					</div>

@@ -31,20 +31,27 @@
 /* Slide Up */
 	@-moz-keyframes SlideUp {
 	    from {transform:translateY(150px);
+			opacity: 0;
 	    	}
 	    to {transform:translateY(0px);
+			opacity: 1;
 	    	}    
 	}
 	@-webkit-keyframes SlideUp {
 	    from {transform:translateY(150px);
+			opacity: 0;
 	    	}
 	    to {transform:translateY(0px);
+			opacity: 1;
 	    	}    
 	}
 	@keyframes SlideUp {
-	    from {transform:translateY(150px);
+	    from {
+	    	transform:translateY(150px);
+			opacity: 0;
 	    	}
 	    to {transform:translateY(0px);
+			opacity: 1;
 	    	}    
 	}
 
@@ -84,6 +91,6 @@
 	animation:SlideUp 500ms ease-in 0s 1 reverse both;
 }
 
-.anim {
-	opacity: 0;
-}	
+// .anim {
+// 	opacity: 0;
+// }	

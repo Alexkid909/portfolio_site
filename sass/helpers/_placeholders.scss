@@ -5,7 +5,7 @@
 	}
 
 	.overlay {
-			background-color:transparentize($project-overlay-color,0.3);					
+		background-color:transparentize($project-overlay-color,0.3);					
     	@include transition(0.4s,ease-in);
 	
     	.content-container {

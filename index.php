@@ -5,11 +5,10 @@
 			<link type="text/css" rel="stylesheet" href="css/bootstrap-3.3.6-dist/css/bootstrap.min.css">			
 			<link type="text/css" rel="stylesheet" href="css/style.css">
 			<link href="https://fonts.googleapis.com/css?family=Rajdhani|Raleway" rel="stylesheet">
-			<script src="js/jquery-3.1.1.min.js"></script>		
-			<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/themes/smoothness/jquery-ui.css">
-			<script src="js/main.js"></script>
+			<script src="js/vendor/jquery-3.1.1.min.js"></script>
+			<script src="js/vendor/angular.min.js"></script>
+			<script src="js/vendor/angular-sanitize.min.js"></script>
 			<script src="js/app.js"></script>
-			<script src="js/jquery.viewport.mini.js"></script>
 <!-- 			<script src="http://192.168.1.244:8080/target/target-script-min.js#anonymous"></script> -->
 			<meta name="viewport" content="width=device-width, initial-scale=1">
 			<meta property="og:site_name" content="Alex Robinson - Portfolio"/>
@@ -32,7 +31,7 @@
 
 		</head>
 
-		<body>
+		<body ng-app="Portfolio">
 			<div id="nav-container">
 				<div id="nav-icons">
 					<ul id="to-home" class="nav pull-left nav-img-container">
@@ -58,21 +57,7 @@
 					</ul>
 				</div>
 			</div>
-			<div id="splash-header" class="section header">
-				<div id="video-container">	
-      				<video id="tyne" autoplay muted loop poster="images/transparent.png">
-        				<source class="video" src="images/river-tyne2.mp4" type="video/mp4">
-      				</video>
-      			</div>
-				<div id="header-section-container" class="container"> 
-					<div class="header-container">
-						<h1>alex robinson</h1>
-					</div>
-					<div class="paragraph-container">
-						<h4 id="header-para-1">Hi! I'm Alex,<br> a front end web developer based in Newcastle upon Tyne, UK.</h4>
-					</div>
-				</div>
-			</div>
+			<splash></splash>
 			<div class="main" id="splash">
 				<div class="section content" id="work-content">
 					<div class="container">
@@ -94,9 +79,7 @@
 						<div class="row">
 							<div class="col-lg-6 col-sm-10 col-lg-offset-3 col-sm-offset-1">
 								<div class="text-container">
-									<p>Here is a selection of recent projects I've worked on.  If you'd like more information about any of my work, please get in touch.  Or why not take a look at my code on <a href="https://github.com/Alexkid909" target="_blank">GitHub</a> or <a target="_blank" href="https://www.codewars.com/users/alexkid9091">Codewars.com</a>.
-
-									</p> 
+									<p>Here is a selection of recent projects I've worked on.  If you'd like more information about any of my work, please get in touch.  Or why not take a look at my code on <a href="https://github.com/Alexkid909" target="_blank">GitHub</a> or <a target="_blank" href="https://www.codewars.com/users/alexkid9091">Codewars.com</a>.</p> 
 								</div>
 							</div>
 						</div>
@@ -116,108 +99,10 @@
 						</ul>
 					</div>
 
-
-					<div class="section content projects" id="project-tiles-1">
-						<div class="container">
-							<div class="row">
-								<a target="_blank" href="projects/betting/index.html">
-									<div class="col-lg-3 col-sm-6  col-xs-12 project anim html5 css3 sass js angularjs bootstrap" id="bet_now">
-										<div class="background-image">
-										</div>
-										<div class="overlay">
-											<div class="content-container">
-												<h3>Bet Now</h3>
-												<span class="divider"></span>
-												<p class="para-small">A front-end, single page app allowing the user to choose from a list of bets enter a stake an place their bets.  Built utilizing AngularJS and making use of Routing, Services, Custom Directives and Two Way Data Binding, this app gets data via a remote API using the AngularJS $http service.    </p>
-											</div>
-										</div>
-									</div>
-								</a>
-								<a target="_blank" href="projects/suggestion_box/index.html">
-									<div class="col-lg-3 col-sm-6  col-xs-12 project anim html5 css3 js angularjs bootstrap" id="suggestion_box">
-										<div class="background-image">
-										</div>
-										<div class="overlay">
-											<div class="content-container">
-												<h3>Suggestion Box</h3>
-												<span class="divider"></span>
-												<p class="para-small">A front-end, single page AngularJS app allows a user to submit, edit, delete, upvote and comment on suggestions. Built utilizing MVC, Routing, Services, Custom Directives and Two Way Data Binding. </p>
-											</div>
-										</div>
-									</div>
-								</a>
-								<a target="_blank" href="projects/rewards/index.html">
-									<div class="col-lg-3 col-sm-6  col-xs-12 project anim html5 css3 bootstrap sass js" id="rewards">
-										<div class="background-image">
-										</div>
-										<div class="overlay">
-											<div class="content-container">
-												<h3>Rewards!</h3>
-												<span class="divider"></span>
-												<p class="para-small">This rewards app is built with vanilla JS and allows a carer / parent to define tasks that can be claimed by kids in order to score points that can be used to redeem rewards.</p>
-											</div>
-										</div>
-									</div>
-								</a>								
-								<a target="_blank" href="projects/jsdrums/index.html">
-									<div class="col-lg-3 col-sm-6  col-xs-12 project anim js" id="jsdrums">
-										<div class="background-image"></div>
-										<div class="overlay">
-											<div class="content-container">
-												<h3>JavaScript Drums</h3>
-												<span class="divider"></span><p class="para-small">A simple app built using vanilla JS, that plays a different drum sound on each key press or click.  I completed this project whilst working on the javascript30.com challenge.</p>	
-											</div>									
-										</div>		
-									</div>
-								</a>
-								<a target="_blank" href="projects/js_css_clock/index.html">
-									<div class="col-lg-3 col-sm-6  col-xs-12 project anim js css3" id="jsclock">
-										<div class="background-image"></div>
-										<div class="overlay">
-											<div class="content-container">
-												<h3>JavaScript<br>and CSS Clock</h3>
-												<span class="divider"></span>
-												<p class="para-small">This simple clock app is brought to life using JavaScript and CSS transitions<br><br>Another project completed during the   javascript30.com challenge.</p>
-											</div>									
-										</div>		
-									</div>
-								</a>
-								<a target="_blank" href="projects/flex_photo_gallery/index.html">
-									<div class="col-lg-3 col-sm-6  col-xs-12 project anim js css3" id="flexbox_gallery">
-										<div class="background-image"></div>
-										<div class="overlay">
-											<div class="content-container">
-												<h3>JS & Flexbox<br>Gallery</h3>
-												<span class="divider"></span>
-												<p class="para-small">This image gallery makes use of JavaScript and CSS  Flexbox and Transitions to make it dynamic.</p>
-											</div>									
-										</div>		
-									</div>
-								</a>							
-								<a target="_blank" href="projects/slider/index.html">
-									<div class="col-lg-3 col-sm-6  col-xs-12 project anim html5 css3 js jquery bootstrap" id="slider">
-										<div class="background-image">
-										</div>
-										<div class="overlay">
-											<div class="content-container">
-												<h3>Simple Slider</h3>
-												<span class="divider"></span>
-												<p class="para-small">This simple image / element slider was my first ever project. Upon gaining a solid foundation of knowledge in JavaScript and jQuery I wanted to build something and this was the first thing that sprang to mind.</p>
-											</div>
-										</div>
-									</div>
-								</a>
-								<a href="">						
-									<div class="col-lg-3 col-sm-6  col-xs-12 project anim placeholder" id="placeholder6">
-										<div class="background-image">
-												<h3>Coming Soon</h3>
-										</div>
-									</div>
-								</a>
-							</div>
-						</div>
-					</div>
+					<projects></projects>
 				</div>
+
+
 				<div class="section content" id="me-content">
 					<div class="container">
 						<div class="row">
@@ -230,6 +115,8 @@
 						</div>
 					</div>
 				</div>
+
+
 				<div id="splash-footer" class="section footer">
 					<dir class="container">
 						<div class="row">
@@ -265,8 +152,6 @@
 									</p>
 								</a>
 							</div>							
-						</div>
-						<div class="row">
 							<div class="col-sm-4 smart-phone-full-width">
 								<a href="mailto:alex.robinson578@gmail.com">
 									<img class="sm-logo" src="images/email.png">
@@ -323,6 +208,29 @@
 				    </div>
 				</div>
 			</div>
+			
+			<!-- AngularJS Modules -->
+
+			<script src="js/modules/portfolio.js"></script>
+
+			<!-- AngularJS Controllers -->
+
+			<script src="js/controllers/projectsCtrl.js"></script>
+			<script src="js/controllers/projectTileCtrl.js"></script>			
+			<script src="js/controllers/splashCtrl.js"></script>
+
+			<!-- AngularJS Directives  -->
+
+			<script src="js/directives/project-tile.js"></script>
+			<script src="js/directives/projects.js"></script>
+			<script src="js/directives/splash.js"></script>
+
+			<!-- AngularJS Services  -->
+
+			<script src="js/services/projects.js"></script>
+			<script src="js/services/sharedScope.js"></script>
+
+			<!-- Vanilla JS Scripts -->
 
 			<script type="text/javascript">
 				// Slides out mobile nav from the right

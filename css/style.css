@@ -29,19 +29,25 @@
 /* Slide Up */
 @-moz-keyframes SlideUp {
   from {
-    transform: translateY(150px); }
+    transform: translateY(150px);
+    opacity: 0; }
   to {
-    transform: translateY(0px); } }
+    transform: translateY(0px);
+    opacity: 1; } }
 @-webkit-keyframes SlideUp {
   from {
-    transform: translateY(150px); }
+    transform: translateY(150px);
+    opacity: 0; }
   to {
-    transform: translateY(0px); } }
+    transform: translateY(0px);
+    opacity: 1; } }
 @keyframes SlideUp {
   from {
-    transform: translateY(150px); }
+    transform: translateY(150px);
+    opacity: 0; }
   to {
-    transform: translateY(0px); } }
+    transform: translateY(0px);
+    opacity: 1; } }
 @keyframes SlideLeft {
   from {
     transform: translate3d(100%, 0, 0);
@@ -70,10 +76,7 @@
   -o-animation: SlideUp;
   animation: SlideUp 500ms ease-in 0s 1 reverse both; }
 
-.anim {
-  opacity: 0; }
-
-.projects .project:not(.placeholder):hover .background-image, .projects .project.jsinview:not(.placeholder) .background-image {
+.projects .project.isMobile.isinviewport:not(.placeholder) .background-image, .projects .project:not(.placeholder):hover .background-image {
   -webkit-transform: scale(1.2, 1.2) translate(-2.5vw, -2vw);
   -moz-transform: scale(1.2, 1.2) translate(-2.5vw, -2vw);
   -ms-transform: scale(1.2, 1.2) translate(-2.5vw, -2vw);
@@ -84,14 +87,14 @@
   -ms-transition: all 15s 0.5s ease-out;
   -o-transition: all 15s 0.5s ease-out;
   transition: all 15s 0.5s ease-out; }
-.projects .project:not(.placeholder):hover .overlay, .projects .project.jsinview:not(.placeholder) .overlay {
+.projects .project.isMobile.isinviewport:not(.placeholder) .overlay, .projects .project:not(.placeholder):hover .overlay {
   background-color: rgba(0, 0, 0, 0.7);
   -webkit-transition: all 0.4s 0s ease-in;
   -moz-transition: all 0.4s 0s ease-in;
   -ms-transition: all 0.4s 0s ease-in;
   -o-transition: all 0.4s 0s ease-in;
   transition: all 0.4s 0s ease-in; }
-  .projects .project:not(.placeholder):hover .overlay .content-container, .projects .project.jsinview:not(.placeholder) .overlay .content-container {
+  .projects .project.isMobile.isinviewport:not(.placeholder) .overlay .content-container, .projects .project:not(.placeholder):hover .overlay .content-container {
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -102,14 +105,14 @@
     -ms-transition: all 0.6s 0s ease-in;
     -o-transition: all 0.6s 0s ease-in;
     transition: all 0.6s 0s ease-in; }
-    .projects .project:not(.placeholder):hover .overlay .content-container h3, .projects .project.jsinview:not(.placeholder) .overlay .content-container h3 {
+    .projects .project.isMobile.isinviewport:not(.placeholder) .overlay .content-container h3, .projects .project:not(.placeholder):hover .overlay .content-container h3 {
       color: white;
       -webkit-transition: all 1s 0s ease-in;
       -moz-transition: all 1s 0s ease-in;
       -ms-transition: all 1s 0s ease-in;
       -o-transition: all 1s 0s ease-in;
       transition: all 1s 0s ease-in; }
-    .projects .project:not(.placeholder):hover .overlay .content-container span.divider, .projects .project.jsinview:not(.placeholder) .overlay .content-container span.divider {
+    .projects .project.isMobile.isinviewport:not(.placeholder) .overlay .content-container span.divider, .projects .project:not(.placeholder):hover .overlay .content-container span.divider {
       border-color: white;
       width: 30%;
       -webkit-transition: all 0.4s 0.6s ease-in;
@@ -117,7 +120,7 @@
       -ms-transition: all 0.4s 0.6s ease-in;
       -o-transition: all 0.4s 0.6s ease-in;
       transition: all 0.4s 0.6s ease-in; }
-    .projects .project:not(.placeholder):hover .overlay .content-container p, .projects .project.jsinview:not(.placeholder) .overlay .content-container p {
+    .projects .project.isMobile.isinviewport:not(.placeholder) .overlay .content-container p, .projects .project:not(.placeholder):hover .overlay .content-container p {
       color: white;
       -webkit-transform: translateY(0);
       -moz-transform: translateY(0);
@@ -129,7 +132,7 @@
       -ms-transition: all 0.4s 1s ease-in;
       -o-transition: all 0.4s 1s ease-in;
       transition: all 0.4s 1s ease-in; }
-      .projects .project:not(.placeholder):hover .overlay .content-container p a, .projects .project.jsinview:not(.placeholder) .overlay .content-container p a {
+      .projects .project.isMobile.isinviewport:not(.placeholder) .overlay .content-container p a, .projects .project:not(.placeholder):hover .overlay .content-container p a {
         color: #7d7dff;
         transition: inherit;
         font-weight: 600; }
@@ -181,7 +184,7 @@
       -o-transition: all 0.3s 0s ease-out;
       transition: all 0.3s 0s ease-out; }
 
-.projects .project.placeholder.jsinview, .projects .project.placeholder:hover {
+.projects .project.placeholder:hover, .projects .project.placeholder.isMobile.isinviewport {
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   -o-filter: grayscale(100%);
@@ -191,7 +194,7 @@
   -ms-transition: all 1s 0s ease-in-out;
   -o-transition: all 1s 0s ease-in-out;
   transition: all 1s 0s ease-in-out; }
-  .projects .project.placeholder.jsinview h3, .projects .project.placeholder:hover h3 {
+  .projects .project.placeholder:hover h3, .projects .project.placeholder.isMobile.isinviewport h3 {
     color: white;
     -webkit-transition: all 1s 0s ease-in-out;
     -moz-transition: all 1s 0s ease-in-out;
@@ -199,7 +202,7 @@
     -o-transition: all 1s 0s ease-in-out;
     transition: all 1s 0s ease-in-out; }
 
-.projects .project.placeholder:not(:hover, .jsinview) h3 {
+.projects .project.placeholder:not(:hover, .isinviewport) h3 {
   color: transparent;
   -webkit-transition: all 0.5s 0s ease-in-out;
   -moz-transition: all 0.5s 0s ease-in-out;
@@ -489,24 +492,11 @@ img.sm-logo {
   min-height: 17vh;
   z-index: 1; }
 
-.projects #slider .background-image {
-  background-image: url("../images/projects/slider.jpg"); }
-.projects #suggestion_box .background-image {
-  background-image: url("../images/projects/suggestion_box.png"); }
 .projects #bet_now .background-image {
   padding: 0 1em;
   background-size: 80%;
   background-repeat: no-repeat;
-  background-image: url("../images/projects/bet-now-logo.png");
   background-color: #000; }
-.projects #rewards .background-image {
-  background-image: url("../images/projects/rewards.png"); }
-.projects #jsdrums .background-image {
-  background-image: url("../images/projects/jsdrums.jpg"); }
-.projects #jsclock .background-image {
-  background-image: url("../images/projects/jsclock.png"); }
-.projects #flexbox_gallery .background-image {
-  background-image: url("../images/projects/flex_gallery.png"); }
 .projects #placeholder1 .background-image {
   background-image: url("../images/projects/placeholder-img1.jpg"); }
 .projects #placeholder2 .background-image {
@@ -533,7 +523,8 @@ img.sm-logo {
   background-image: url("../images/projects/placeholder-img12.jpg"); }
 .projects .project {
   padding: 0;
-  overflow: hidden; }
+  overflow: hidden;
+  opacity: 0; }
   .projects .project .background-image {
     display: block;
     margin: auto;
@@ -559,6 +550,8 @@ img.sm-logo {
     color: transparent; }
   .projects .project:not(.placeholder) {
     overflow: hidden; }
+    .projects .project:not(.placeholder).isMobile {
+      opacity: 1; }
     .projects .project:not(.placeholder) .overlay {
       height: 101%;
       position: absolute;
@@ -599,6 +592,8 @@ img.sm-logo {
       -ms-transform: translateY(-50%);
       -o-transform: translateY(-50%);
       transform: translateY(-50%); }
+    .projects .project.placeholder.isMobile {
+      opacity: 1; }
   .projects .project.greyout {
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);

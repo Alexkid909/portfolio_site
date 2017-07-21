@@ -397,51 +397,51 @@ p, label {
 
 .projects {
 
-	#slider {
-		.background-image {
-			background-image: url("../images/projects/slider.jpg");
-		}
-	}
+	// #slider {
+	// 	.background-image {
+	// 		background-image: url("../images/projects/slider.jpg");
+	// 	}
+	// }
 
-	#suggestion_box {
-		.background-image {
-			background-image: url("../images/projects/suggestion_box.png");
-		}
-	}
+	// #suggestion_box {
+	// 	.background-image {
+	// 		background-image: url("../images/projects/suggestion_box.png");
+	// 	}
+	// }
 
 	#bet_now {
 		.background-image {
 			padding: 0 1em;
 			background-size: 80%;
 			background-repeat: no-repeat;
-			background-image: url("../images/projects/bet-now-logo.png");
+			// background-image: url("../images/projects/bet-now-logo.png");
 			background-color: #000;
 		}
 	}	
 
-	#rewards {
-		.background-image {
-			background-image: url("../images/projects/rewards.png");
-		}		
-	}	
+	// #rewards {
+	// 	.background-image {
+	// 		background-image: url("../images/projects/rewards.png");
+	// 	}		
+	// }	
 
-	#jsdrums {
-		.background-image {
-			background-image: url("../images/projects/jsdrums.jpg");
-		}
-	}
+	// #jsdrums {
+	// 	.background-image {
+	// 		background-image: url("../images/projects/jsdrums.jpg");
+	// 	}
+	// }
 
-	#jsclock {
-		.background-image {
-			background-image: url("../images/projects/jsclock.png");
-		}		
-	}
+	// #jsclock {
+	// 	.background-image {
+	// 		background-image: url("../images/projects/jsclock.png");
+	// 	}		
+	// }
 
-	#flexbox_gallery {
-		.background-image {
-			background-image: url("../images/projects/flex_gallery.png");
-		}		
-	}	
+	// #flexbox_gallery {
+	// 	.background-image {
+	// 		background-image: url("../images/projects/flex_gallery.png");
+	// 	}		
+	// }	
 
 	#placeholder1 {
 		.background-image {		
@@ -514,6 +514,7 @@ p, label {
 	.project {
 		padding: 0;
 		overflow: hidden;
+		opacity: 0;
 
 		.background-image {
 			display: block;
@@ -540,13 +541,20 @@ p, label {
 		}
 
 
-
+		
 		&:not(:hover) {
 	    	color: transparent;
 		}
 
 		&:not(.placeholder) {
 			overflow: hidden;
+	
+			&.isMobile {
+				opacity: 1;
+				&.isinviewport {
+					@extend %project-tile-transition-in;				
+				}
+			}		
 
 			.overlay {
 		  		height: 101%;
@@ -584,11 +592,7 @@ p, label {
 				@extend %project-tile-transition-in;
 			}
 
-			&.jsinview {
-				@extend %project-tile-transition-in;				
-			}
-
-			&:not(:hover,.jsinview) {
+			&:not(:hover,.isMobile) {
 				@extend %project-tile-transition-out;
 			}
 
@@ -603,10 +607,6 @@ p, label {
 				@include transform(translateY(-50%));			
 			}
 
-			&.jsinview {
-				@extend %placeholder-tile-transition-in;
-			}
-
 
 		  	@include filter(grayscale(0%));
 		  	@include transition(0.5s,ease-in-out);
@@ -615,9 +615,16 @@ p, label {
 				@extend %placeholder-tile-transition-in;
 
 			}
-			&:not(:hover, .jsinview) {
+			&:not(:hover, .isinviewport) {
 				@extend %placeholder-tile-transition-out;
 			}
+
+			&.isMobile {
+				opacity: 1;
+				&.isinviewport {
+					@extend %placeholder-tile-transition-in;				
+				}
+			}				
 	  	}
 
 

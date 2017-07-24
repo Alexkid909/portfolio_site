@@ -1,0 +1,19 @@
+<div class="vertical-banner">
+	<ul id="dev-logo-banner">
+		<li id="html5"><img class="dev_logo" src="images/html5-white.png"></li>	
+		<li id="css3"><img class="dev_logo" src="images/css3-logo-white.png"></li>	
+		<li id="bootstrap"><img class="dev_logo" src="images/bootstrap-logo-white.png"></li>
+		<li id="js"><img class="dev_logo" src="images/javascript-logo-white.png"></li>
+		<li id="jquery"><img class="dev_logo" src="images/jquery-white.png"></li>
+		<li id="angularjs"><img class="dev_logo" src="images/AngularJS.png"></li>
+		<li id="sass"><img class="dev_logo" src="images/sass.png"></li>
+		<li id="all">All</li>
+	</ul>
+</div>
+<div class="section content projects" id="project-tiles-1">
+	<div class="container">
+		<div class="row">
+			<project-tile ng-repeat="project in projects" name="project.name" description="project.description" background-img-name="project.backgroundImgName" link-url="project.linkUrl" tech-tags="project.techTags" placeholder="project.placeholder" element-id="project.elementId"></project-tile>
+		</div>
+	</div>
+</div>

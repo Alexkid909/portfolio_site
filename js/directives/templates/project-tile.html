@@ -1,0 +1,13 @@
+<a target="_blank" ng-href="projects/{{linkUrl}}">
+	<div class="col-lg-3 col-sm-6 col-xs-12 project anim {{techTags}}" ng-class="{placeholder: placeholder, isMobile: isMobileOS}" id="{{elementId}}">
+		<div class="background-image" ng-style="{'background-image':'url({{backgroundImgUrl}})'}">
+		</div>
+		<div class="overlay">
+			<div class="content-container">
+				<h3 ng-bind-html="name"></h3>
+				<span class="divider"></span>
+				<p class="para-small" ng-bind-html="description"></p>
+			</div>
+		</div>
+	</div>
+</a>

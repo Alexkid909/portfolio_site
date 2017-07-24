@@ -348,39 +348,48 @@ p, label {
 
 	img.dev_logo {
 		height: 4.5vh;	
-		margin-left:10px;
-		margin-right:10px;
+		padding-left:10px;
+		padding-right:10px;
 	}
 
 	img.sm-logo {
 		height: 3.5em;	
 	}
 
-	.vertical-banner {
-		vertical-align: middle;
-		background: linear-gradient(to right,rgba(100,100,100,0),rgba(100,100,100,0.8));
-	    margin:0;
-	    display: block;
-	    height: 100%;
-	    position: absolute;
-	    right: 0;
-	    z-index: 2;
-	    @include transform(translateX(100%));
 
-	    #dev-logo-banner {
-	    	list-style-type: none;
-			padding-left: 0;
-			position: relative;
-			top: 50%;
-			transform: translateY(-50%);
+	#projects-container {		
+		.vertical-banner {
+			vertical-align: middle;
+			background: linear-gradient(to right,rgba(100,100,100,0),rgba(100,100,100,0.8));
+		    margin:0;
+		    display: block;
+		    height: 100%;
+		    position: absolute;
+		    right: 0;
+		    z-index: 2;
+			@include transition(0.5s,ease-in-out);
+		    @include transform(translateX(100%));
 
-	    }
+		    #dev-logo-banner {
+		    	list-style-type: none;
+				padding-left: 0;
+				position: relative;
+				top: 50%;
+				transform: translateY(-50%);
 
-		li {
-			margin-bottom: 30px;
-		
-			&:last-child {
-				margin-bottom:0;
+		    }
+
+			li {
+				margin-bottom: 30px;
+			
+				&:last-child {
+					margin-bottom:0;
+				}
+			}
+		}
+		&:hover {
+			.vertical-banner {
+			    @include transform(translateX(0));			
 			}
 		}
 	}
@@ -397,18 +406,6 @@ p, label {
 
 .projects {
 
-	// #slider {
-	// 	.background-image {
-	// 		background-image: url("../images/projects/slider.jpg");
-	// 	}
-	// }
-
-	// #suggestion_box {
-	// 	.background-image {
-	// 		background-image: url("../images/projects/suggestion_box.png");
-	// 	}
-	// }
-
 	#bet_now {
 		.background-image {
 			padding: 0 1em;
@@ -417,99 +414,7 @@ p, label {
 			// background-image: url("../images/projects/bet-now-logo.png");
 			background-color: #000;
 		}
-	}	
-
-	// #rewards {
-	// 	.background-image {
-	// 		background-image: url("../images/projects/rewards.png");
-	// 	}		
-	// }	
-
-	// #jsdrums {
-	// 	.background-image {
-	// 		background-image: url("../images/projects/jsdrums.jpg");
-	// 	}
-	// }
-
-	// #jsclock {
-	// 	.background-image {
-	// 		background-image: url("../images/projects/jsclock.png");
-	// 	}		
-	// }
-
-	// #flexbox_gallery {
-	// 	.background-image {
-	// 		background-image: url("../images/projects/flex_gallery.png");
-	// 	}		
-	// }	
-
-	#placeholder1 {
-		.background-image {		
-			background-image: url("../images/projects/placeholder-img1.jpg");
-		}
-	}
-
-	#placeholder2 {
-		.background-image {		
-			background-image: url("../images/projects/placeholder-img2.jpg");
-		}
-	}
-
-	#placeholder3 {
-		.background-image {		
-			background-image: url("../images/projects/placeholder-img3.jpg");
-		}
-	}
-
-	#placeholder4 {
-		.background-image {
-			background-image: url("../images/projects/placeholder-img4.jpg");
-		}
-	}
-
-	#placeholder5 {
-		.background-image {		
-			background-image: url("../images/projects/placeholder-img5.jpg");
-		}
-	}
-
-	#placeholder6 {
-		.background-image {
-			background-image: url("../images/projects/placeholder-img6.jpg");
-		}
-	}
-
-	#placeholder7 {
-		.background-image {		
-			background-image: url("../images/projects/placeholder-img7.jpg");
-		}
-	}
-
-	#placeholder8 {
-		.background-image {
-			background-image: url("../images/projects/placeholder-img8.jpg");
-		}
-	}
-
-	#placeholder9 {
-		.background-image {
-			background-image: url("../images/projects/placeholder-img9.jpg");
-		}
-	}
-
-	#placeholder10 {
-		.background-image {
-			background-image: url("../images/projects/placeholder-img10.jpg");
-		}
-	}
-
-	#placeholder11 {
-		background-image: url("../images/projects/placeholder-img11.jpg");
-	}
-
-	#placeholder12 {
-		background-image: url("../images/projects/placeholder-img12.jpg");
-	}
+	}		
 
 	.project {
 		padding: 0;

@@ -32,7 +32,7 @@
 		</head>
 
 		<body ng-app="Portfolio">
-			<div id="nav-container">
+<!-- 			<div id="nav-container">
 				<div id="nav-icons">
 					<ul id="to-home" class="nav pull-left nav-img-container">
 						<li id="to-top">
@@ -56,7 +56,8 @@
 						<li id="to-me"><a class="main-nav-btn" href="#me-content">me</a></li>
 					</ul>
 				</div>
-			</div>
+			</div> -->
+			<nav></nav>
 			<splash></splash>
 			<div class="main" id="splash">
 				<div class="section content" id="work-content">
@@ -86,19 +87,6 @@
 					</div>
 				</div>
 				<div id="projects-container">
-					<div class="vertical-banner">
-						<ul id="dev-logo-banner">
-							<li id="html5"><img class="dev_logo" src="images/html5-white.png"></li>	
-							<li id="css3"><img class="dev_logo" src="images/css3-logo-white.png"></li>	
-							<li id="bootstrap"><img class="dev_logo" src="images/bootstrap-logo-white.png"></li>
-							<li id="js"><img class="dev_logo" src="images/javascript-logo-white.png"></li>
-							<li id="jquery"><img class="dev_logo" src="images/jquery-white.png"></li>
-							<li id="angularjs"><img class="dev_logo" src="images/AngularJS.png"></li>
-							<li id="sass"><img class="dev_logo" src="images/sass.png"></li>
-							<li id="all">All</li>
-						</ul>
-					</div>
-
 					<projects></projects>
 				</div>
 
@@ -224,175 +212,13 @@
 			<script src="js/directives/project-tile.js"></script>
 			<script src="js/directives/projects.js"></script>
 			<script src="js/directives/splash.js"></script>
+			<script src="js/directives/nav.js"></script>
+
 
 			<!-- AngularJS Services  -->
 
 			<script src="js/services/projects.js"></script>
 			<script src="js/services/sharedScope.js"></script>
 
-			<!-- Vanilla JS Scripts -->
-
-			<script type="text/javascript">
-				// Slides out mobile nav from the right
-				const mobileNavBtn = document.querySelector('#mobile-nav a');
-				const mainNav = document.querySelector('#main-nav');
-				const iconNav = document.querySelector('#nav-icons');
-				const navItems = document.querySelectorAll('#main-nav li, #nav-icons #to-home li');
-				const homeButton = iconNav.querySelector('#to-home');
-
-				var mobileNavActive = false;
-				function toggleMobileNav() {
-					mainNav.classList.toggle('active');
-					iconNav.classList.toggle('active');
-					mobileNavActive = !mobileNavActive;
-				}
-
-				var scrlFrom;
-				var scrlTo;
-				var duration;
-
-				function scrollTo(element) {
-					scrlTo = document.body.scrollTop + element.getBoundingClientRect().top - document.querySelector('#nav-icons').clientHeight;
-					duration = 600;
-					scrollFromTo(document.body.scrollTop,scrlTo,duration)
-				}
-
-				function scrollFromTo(from,to, duration) {
-				    if (duration <= 0) return;
-				    var distance = to - from; 
-				    var perTick = distance / duration * 10;
-				    setTimeout(function() {
-				        document.body.scrollTop += perTick;
-				        if (document.body.scrollTop === to) return;
-				        scrollFromTo(document.body.scrollTop, to, duration - 10);
-				    }, 10);
-				};
-
-				mobileNavBtn.addEventListener('click',toggleMobileNav);
-				for (var i = 0;i < navItems.length; i++) {			
-					navItems[i].addEventListener('click',toggleMobileNav);
-					navItems[i].addEventListener('click',function(e) {
-						var target;						
-						for (var i = 0;!target;i++) {
-							if (e.path[i].localName == "a") {
-								target = e.path[i];
-							};
-						};
-						var elmnt = document.querySelector(target.hash);
-						e.preventDefault();						
-						scrollTo(elmnt);
-					}); 
-				};
-				homeButton.addEventListener('click',function() {
-					if (mobileNavActive) {
-						toggleMobileNav();
-					};
-				});
-
-			</script>
-
-			<script type="text/javascript">
-
-				//Sets Project Filter Bar to correct height
-
-				function setVerticalBannerHeight() {
-					a = document.getElementById('projects-container');
-					aH = a.offsetHeight;
-					b = document.getElementsByClassName("vertical-banner")[0];
-					b.style.height = aH+"px"
-				}
-
-				setVerticalBannerHeight()
-
-			</script>
-			<script type="text/javascript">  // Transitions in project vertical nav bar on hover over projects.
-
-				var projNavBarVisible = false;
-
-				a = document.getElementsByClassName('vertical-banner')[0];
-
-				function removeAnimSetTransX0() {
-							a.style.transform = "translateX(0)";
-							a.style.animation = "";
-							projNavBarVisible = true;
-							a.removeEventListener("animationend",removeAnimSetTransX0);
-				}
-
-				function slideOutVerticalBanner(callback) {
-					a.addEventListener("animationend",removeAnimSetTransX100);
-					a.style.animation = "SlideLeft 200ms ease-in 1s 1 reverse both";
-				}
-
-				function removeAnimSetTransX100() {
-							a.style.transform = "translateX(100%)";
-							a.style.animation = "";
-							projNavBarVisible = false;
-							a.removeEventListener("animationend",removeAnimSetTransX100);
-				}
-
-				function slideInVerticalBanner(callback) {
-					a.addEventListener("animationend",removeAnimSetTransX0);
-					a.style.animation = "SlideLeft 200ms ease-in 1s 1 normal both";
-				}
-
-				function toggleProjectsNav(e) {
-					if (projNavBarVisible && (e.type == "mouseleave")) {
-						slideOutVerticalBanner();
-					} else if ((projNavBarVisible == false) && (e.type == "mouseover")) {
-						slideInVerticalBanner();
-					} else {
-						return false
-					};
-				};
-
-				x = document.getElementById('projects-container');
-				x.addEventListener("mouseover",toggleProjectsNav);
-				x.addEventListener("mouseleave",toggleProjectsNav);
-		
-			</script>
-
-			<script type="text/javascript">
-			var language;
-			var devLogoBanner = document.getElementById('dev-logo-banner');
-			var projects = document.querySelectorAll('.project');
-
-
-
-
-			function removeProjectsFilter() {
-				var greyedoutProjects = document.querySelectorAll('.project.greyout')
-				if (greyedoutProjects.length > 0) {
-					greyedoutProjects.forEach(function(project) {
-						project.classList.remove("greyout");
-					});
-				}; 
-
-			};
-			
-			function filterProjects(language) {
-					projects.forEach(function(project) {
-						var projectClassName = project.className; 
-						if(projectClassName.search(language) < 0) {
-							project.classList.add("greyout");
-						};
-					});
-				};
-
-			function projectFilterHandler(event) {
-				language = event.target.id;
-				removeProjectsFilter();
-				if (language === 'all') {
-					return false
-				} else {
-					language = event.target.parentElement.id;					
-					filterProjects(language);
-				};
-			};
-
-			devLogoBanner.addEventListener('click',function(event) {
-				projectFilterHandler(event,filterProjects);
-			});
-
-			</script>
 		</body>
 	</html>

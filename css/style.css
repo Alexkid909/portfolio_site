@@ -461,7 +461,7 @@ img.dev_logo {
 img.sm-logo {
   height: 3.5em; }
 
-.vertical-banner {
+#projects-container .vertical-banner {
   vertical-align: middle;
   background: linear-gradient(to right, rgba(100, 100, 100, 0), rgba(100, 100, 100, 0.8));
   margin: 0;
@@ -470,21 +470,32 @@ img.sm-logo {
   position: absolute;
   right: 0;
   z-index: 2;
+  -webkit-transition: all 0.5s 0s ease-in-out;
+  -moz-transition: all 0.5s 0s ease-in-out;
+  -ms-transition: all 0.5s 0s ease-in-out;
+  -o-transition: all 0.5s 0s ease-in-out;
+  transition: all 0.5s 0s ease-in-out;
   -webkit-transform: translateX(100%);
   -moz-transform: translateX(100%);
   -ms-transform: translateX(100%);
   -o-transform: translateX(100%);
   transform: translateX(100%); }
-  .vertical-banner #dev-logo-banner {
+  #projects-container .vertical-banner #dev-logo-banner {
     list-style-type: none;
     padding-left: 0;
     position: relative;
     top: 50%;
     transform: translateY(-50%); }
-  .vertical-banner li {
+  #projects-container .vertical-banner li {
     margin-bottom: 30px; }
-    .vertical-banner li:last-child {
+    #projects-container .vertical-banner li:last-child {
       margin-bottom: 0; }
+#projects-container:hover .vertical-banner {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0); }
 
 #projects-content-1 {
   background-color: #141414;
@@ -497,30 +508,6 @@ img.sm-logo {
   background-size: 80%;
   background-repeat: no-repeat;
   background-color: #000; }
-.projects #placeholder1 .background-image {
-  background-image: url("../images/projects/placeholder-img1.jpg"); }
-.projects #placeholder2 .background-image {
-  background-image: url("../images/projects/placeholder-img2.jpg"); }
-.projects #placeholder3 .background-image {
-  background-image: url("../images/projects/placeholder-img3.jpg"); }
-.projects #placeholder4 .background-image {
-  background-image: url("../images/projects/placeholder-img4.jpg"); }
-.projects #placeholder5 .background-image {
-  background-image: url("../images/projects/placeholder-img5.jpg"); }
-.projects #placeholder6 .background-image {
-  background-image: url("../images/projects/placeholder-img6.jpg"); }
-.projects #placeholder7 .background-image {
-  background-image: url("../images/projects/placeholder-img7.jpg"); }
-.projects #placeholder8 .background-image {
-  background-image: url("../images/projects/placeholder-img8.jpg"); }
-.projects #placeholder9 .background-image {
-  background-image: url("../images/projects/placeholder-img9.jpg"); }
-.projects #placeholder10 .background-image {
-  background-image: url("../images/projects/placeholder-img10.jpg"); }
-.projects #placeholder11 {
-  background-image: url("../images/projects/placeholder-img11.jpg"); }
-.projects #placeholder12 {
-  background-image: url("../images/projects/placeholder-img12.jpg"); }
 .projects .project {
   padding: 0;
   overflow: hidden;

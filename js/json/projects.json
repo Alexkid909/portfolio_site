@@ -1,5 +1,14 @@
 	[
 		{
+			"name": "Weather",
+			"description": "An AngularJS, single page app allowing the user to search for their location and view a daily and hourly summary of the weather.  Built utilizing AngularJS, ECMA Sript 2016, SASS and CSS Grid.  Compiled, Transpiled, Minified and Autoprefixed using Gulp.js.",
+			"backgroundImgName": "sunshine_1920.jpg",
+			"linkUrl": "weather/index.html",
+			"techTags": "html5 css3 sass js angularjs",
+			"placeholder": false,
+			"elementId" : "weather"
+		},
+		{
 			"name": "Bet Now",
 			"description": "A front-end, single page app allowing the user to choose from a list of bets enter a stake an place their bets.  Built utilizing AngularJS and making use of Routing, Services, Custom Directives and Two Way Data Binding, this app gets data via a remote API using the AngularJS $http service.",
 			"backgroundImgName": "bet-now-logo.png",

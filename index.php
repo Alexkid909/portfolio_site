@@ -15,8 +15,8 @@
 			<meta property="og:title" content="Alex Robinson - Front-end Web Developer - Portfolio."/>
 			<meta property="og:description" content="Hi! I'm Alex, a front end web developer based in Newcastle upon Tyne, UK.  Welcome to my portfolio site where you can findo out more about me and take a look at the projects I've worked on."/>
 			<meta name="description" content="Hi! I'm Alex, a front end web developer based in Newcastle upon Tyne, UK.  Welcome to my portfolio site where you can findo out more about me and take a look at the projects I've worked on."/>			
-			<meta property="og:image" content="http://www.alexkid.me/images/preview.png">
-			<meta property="og:url" content="http://www.alexkid.me">
+			<meta property="og:image" content="http://www.alexkid.co.uk/images/preview.png">
+			<meta property="og:url" content="http://www.alexkid.co.uk">
 			<meta property="og:type" content="website"/>			
 			<script>
 			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

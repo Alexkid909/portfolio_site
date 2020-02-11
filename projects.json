@@ -1,0 +1,74 @@
+	[
+		{
+			"name": "Weather",
+			"description": "An AngularJS, single page app allowing the user to search for their location and view a daily and hourly summary of the weather.  Built utilizing AngularJS, ECMA Sript 2016, SASS and CSS Grid.  Compiled, Transpiled, Minified and Autoprefixed using Gulp.js.",
+			"backgroundImgName": "sunshine_1920.jpg",
+			"linkUrl": "weather/index.html",
+			"techTags": "html5 css3 sass js angularjs",
+			"placeholder": false,
+			"elementId" : "weather"
+		},
+		{
+			"name": "Bet Now",
+			"description": "A front-end, single page app allowing the user to choose from a list of bets enter a stake an place their bets.  Built utilizing AngularJS and making use of Routing, Services, Custom Directives and Two Way Data Binding, this app gets data via a remote API using the AngularJS $http service.",
+			"backgroundImgName": "bet-now-logo.png",
+			"linkUrl": "betting/index.html",
+			"techTags": "html5 css3 sass js angularjs bootstrap",
+			"placeholder": false,
+			"elementId" : "bet_now"
+		},
+		{
+			"name": "Suggestion Box",
+			"description": "A front-end, single page AngularJS app allows a user to submit, edit, delete, upvote and comment on suggestions. Built utilizing MVC, Routing, Services, Custom Directives and Two Way Data Binding.",
+			"backgroundImgName": "suggestion_box.png",
+			"linkUrl": "suggestion_box/index.html",
+			"techTags": "html5 css3 js angularjs",
+			"placeholder": false,
+			"elementId" : "suggestion_box"
+		},
+		{
+			"name": "Rewards!",
+			"description": "This rewards app is built with vanilla JS and allows a carer / parent to define tasks that can be claimed by kids in order to score points that can be used to redeem rewards.",
+			"backgroundImgName": "rewards.png",
+			"linkUrl": "rewards/index.html",
+			"techTags": "html5 css3 bootstrap sass js",
+			"placeholder": false,
+			"elementId" : "rewards"
+		},
+		{
+			"name": "JavaScript Drums",
+			"description": "A simple app built using vanilla JS, that plays a different drum sound on each key press or click.  I completed this project whilst working on the javascript30.com challenge.",
+			"backgroundImgName": "jsdrums.jpg",
+			"linkUrl": "jsdrums/index.html",
+			"techTags": "js",
+			"placeholder": false,
+			"elementId" : "jsdrums"
+		},
+		{
+			"name": "JavaScript<br>and CSS Clock",
+			"description": "This simple clock app is brought to life using JavaScript and CSS transitions<br><br>Another project completed during the   javascript30.com challenge.",
+			"backgroundImgName": "jsclock.png",
+			"linkUrl": "js_css_clock/index.html",
+			"techTags": "js css3",
+			"placeholder": false,
+			"elementId" : "jsclock"
+		},
+		{
+			"name": "JS & Flexbox<br>Gallery",
+			"description": "This image gallery makes use of JavaScript and CSS  Flexbox and Transitions to make it dynamic.",
+			"backgroundImgName": "flex_gallery.png",
+			"linkUrl": "flex_photo_gallery/index.html",
+			"techTags": "js css3",
+			"placeholder": false,
+			"elementId" : "flexbox_gallery"
+		},
+		{
+			"name": "Simple Slider",
+			"description": "This simple image / element slider was my first ever project. Upon gaining a solid foundation of knowledge in JavaScript and jQuery I wanted to build something and this was the first thing that sprang to mind.",
+			"backgroundImgName": "slider.jpg",
+			"linkUrl": "slider/index.html",
+			"techTags": "html5 css3 js jquery bootstrap",
+			"placeholder": false,
+			"elementId" : "slider"
+		}
+	]
